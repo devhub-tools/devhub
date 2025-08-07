@@ -4,6 +4,10 @@ services:
     restart: always
     environment:
       POSTGRES_PASSWORD: postgres
+    command:
+      - "postgres"
+      - "-c"
+      - "wal_level=logical"
     volumes:
       - pgdata:/var/lib/postgresql/data
     ports:
