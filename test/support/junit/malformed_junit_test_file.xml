@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<testsuiteserror>
+    <testsuite errors="1" failures="0" skipped="0" name="Elixir.Devhub.Agents.ClientTest" tests="1" time="0.0000">
+        <properties>
+            <property name="date" value="2025-03-19T01:59:55.419505Z"/>
+            <property name="seed" value="408788"/>
+        </properties>
+        <testcase file="lib/devhub/agents/client_test.exs" classname="Elixir.Devhub.Agents.ClientTest" name="test success" time="0.0000">
+            <error message="Invalid module Elixir.ExUnit.TestModule">%ExUnit.TestModule{file: "/Users/gaia/devhub/devhub/lib/devhub/agents/client_test.exs", name: Devhub.Agents.ClientTest, setup_all?: true, state: {:failed, [{{:EXIT, #PID&lt;0.1033.0&gt;}, :killed, []}]}, parameters: %{}, tags: %{}, tests: [%ExUnit.Test{name: :"test success", case: Devhub.Agents.ClientTest, module: Devhub.Agents.ClientTest, state: nil, time: 0, tags: %{line: 14, registered: %{}, file: "/Users/gaia/devhub/devhub/lib/devhub/agents/client_test.exs", describe: nil, describe_line: nil, test_type: :test}, logs: "", parameters: %{}}]}</error>
+        </testcase>
+    </testsuite>
+    <testsuite errors="0" failures="0" skipped="0" name="Elixir.Devhub.ApiKeysTest" tests="1" time="0.1526">
+        <testcase file="lib/devhub/calendar_test.exs" classname="Elixir.Devhub.CalendarTest" name="test create_event/1" time="0.0078"/>
+        <testcase file="lib/devhub/calendar_test.exs" classname="Elixir.Devhub.CalendarTest" name="test sync/1" time="0.0902"/>
+        <testcase file="lib/devhub/calendar_test.exs" classname="Elixir.Devhub.CalendarTest" name="test count_business_days/2" time="0.0697"/>
+        <testcase file="lib/devhub/calendar_test.exs" classname="Elixir.Devhub.CalendarTest" name="test get_events/3" time="0.0000">
+            <skipped message="due to skip filter"/>
+        </testcase>
+    </testsuite>
+</testsuites>

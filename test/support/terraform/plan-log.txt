@@ -1,0 +1,250 @@
+[0m[1mhelm_release.infrastructure: Refreshing state... [id=infrastructure][0m
+[0m[1mrandom_id.arctic_k8s_cloudflare_tunnel_secret: Refreshing state... [id=ftNPtbb_EGoRwjd6pWwjTdgKyY6EnRaT4OL5a-p7P8mqBEWEHxYhPcLVcN5W7p_tII2QWX7endK792BppBkWJw][0m
+[0m[1mdata.vault_kv_secret_v2.ferret_rescue_api: Reading...[0m[0m
+[0m[1mdata.cloudflare_zone.devhub: Reading...[0m[0m
+[0m[1mdata.vault_kv_secret_v2.devhub: Reading...[0m[0m
+[0m[1mcloudflare_zone.vibes: Refreshing state... [id=670a93ae9c613ec376a463c8a7ba2576][0m
+[0m[1mcloudflare_record.app_devhub: Refreshing state... [id=42409edb5a5b24fbc328948f9a8b626a][0m
+[0m[1mcloudflare_zone.txferretrescue: Refreshing state... [id=ce9134003871cb7f2fb0fe504a76230b][0m
+[0m[1mcloudflare_zone.fifty_seven_media: Refreshing state... [id=8788c680b914aae90436666d5bea5dc7][0m
+[0m[1mcloudflare_zone.coverbot_io: Refreshing state... [id=a0a01eb80abed014deaa3e71a2c617fb][0m
+[0m[1mcloudflare_zone.spendable_money: Refreshing state... [id=92aeffba49c356cec35dbae4b3bdcaa0][0m
+[0m[1mdata.vault_kv_secret_v2.devhub: Read complete after 1s [id=kv/data/devhub][0m
+[0m[1mdata.vault_kv_secret_v2.ferret_rescue_api: Read complete after 1s [id=kv/data/ferret-rescue-api][0m
+[0m[1mdata.vault_kv_secret_v2.spendable: Reading...[0m[0m
+[0m[1mcloudflare_zone.querydesk_com: Refreshing state... [id=f51d94e26a35ec97fbf5199d8fb44ffc][0m
+[0m[1mdata.vault_kv_secret_v2.vibes: Reading...[0m[0m
+[0m[1mdata.vault_kv_secret_v2.spendable: Read complete after 0s [id=kv/data/spendable][0m
+[0m[1mdata.cloudflare_zone.devhub: Read complete after 1s [id=bea16ed3fb64a72370f57f5b24104950][0m
+[0m[1mdata.vault_kv_secret_v2.querydesk: Reading...[0m[0m
+[0m[1mquerydesk_database.vibes: Refreshing state... [id=db_01HPYPWREVK0SY32B9XE8ZFNY8][0m
+[0m[1mdata.vault_kv_secret_v2.vibes: Read complete after 0s [id=kv/data/vibes][0m
+[0m[1mquerydesk_database.querydesk: Refreshing state... [id=db_01GH878Z0J1SR8WJZM8A4QA1K4][0m
+[0m[1mquerydesk_database.devhub: Refreshing state... [id=db_01J36FNDDRGV2VZ6X67W15XTTD][0m
+[0m[1mdata.vault_kv_secret_v2.querydesk: Read complete after 0s [id=kv/data/querydesk][0m
+[0m[1mquerydesk_database.spendable: Refreshing state... [id=db_01HTTPZ1MFTF9R6V6ZTRKX7BT6][0m
+[0m[1mquerydesk_database.devhub_licensing: Refreshing state... [id=db_01J3BYY01ZPAWPZ9Z9Y75TKFG3][0m
+[0m[1mquerydesk_database.coverbot: Refreshing state... [id=db_01GRN1FX4GN8CSQ9K8KRAE53P1][0m
+[0m[1mquerydesk_database.ferret_rescue: Refreshing state... [id=db_01HTEG4EC27ZEYH4A2FFM9JCPG][0m
+[0m[1mkubernetes_namespace_v1.ferret_rescue_api: Refreshing state... [id=ferret-rescue-api][0m
+[0m[1mdata.vault_kv_secret_v2.coverbot: Reading...[0m[0m
+[0m[1mkubernetes_namespace_v1.spendable: Refreshing state... [id=spendable][0m
+[0m[1mkubernetes_namespace_v1.vibes: Refreshing state... [id=vibes][0m
+[0m[1mkubernetes_namespace_v1.vault: Refreshing state... [id=vault][0m
+[0m[1mmodule.ferret_rescue_db_backups.kubernetes_service_account.service_account: Refreshing state... [id=ferret-rescue-api/db-backups][0m
+[0m[1mmodule.coverbot_db_backups.kubernetes_service_account.service_account: Refreshing state... [id=coverbot/db-backups][0m
+[0m[1mkubernetes_namespace_v1.coverbot: Refreshing state... [id=coverbot][0m
+[0m[1mkubernetes_namespace_v1.querydesk: Refreshing state... [id=querydesk][0m
+[0m[1mdata.vault_kv_secret_v2.coverbot: Read complete after 0s [id=kv/data/coverbot][0m
+[0m[1mkubernetes_namespace_v1.cloudflare: Refreshing state... [id=cloudflare][0m
+[0m[1mkubernetes_namespace_v1.promtail: Refreshing state... [id=promtail][0m
+[0m[1mmodule.querydesk_db_backups.kubernetes_service_account.service_account: Refreshing state... [id=querydesk/db-backups][0m
+[0m[1mkubernetes_namespace_v1.traefik: Refreshing state... [id=traefik][0m
+[0m[1mkubernetes_namespace_v1.devhub: Refreshing state... [id=devhub][0m
+[0m[1mcloudflare_tunnel.arctic_k8s: Refreshing state... [id=043d4947-87fd-4397-8e4b-5d7cce477c01][0m
+[0m[1mcloudflare_record.txt_vibes: Refreshing state... [id=66403779a09d40199961608809684af1][0m
+[0m[1mgoogle_storage_bucket.db_backups: Refreshing state... [id=cloud-57-db-backups][0m
+[0m[1mcloudflare_record.caa_devhub_notify: Refreshing state... [id=e8aae53a7be7c573256651ea76b5f7e9][0m
+[0m[1mmodule.querydesk_db_backups.kubernetes_manifest.cronjob: Refreshing state...[0m
+[0m[1mmodule.ferret_rescue_db_backups.kubernetes_manifest.cronjob: Refreshing state...[0m
+[0m[1mmodule.coverbot_db_backups.kubernetes_manifest.cronjob: Refreshing state...[0m
+[0m[1mcloudflare_record.caa_devhub: Refreshing state... [id=db9ec3eebef1d474da581a9cb7ad16c6][0m
+[0m[1mgoogle_storage_bucket.us_artifacts: Refreshing state... [id=us.artifacts.cloud-57.appspot.com][0m
+[0m[1mgoogle_project.default: Refreshing state... [id=projects/cloud-57][0m
+[0m[1mgoogle_service_account.spendable: Refreshing state... [id=projects/cloud-57/serviceAccounts/spendable@cloud-57.iam.gserviceaccount.com][0m
+[0m[1mgoogle_pubsub_topic.send_member_request: Refreshing state... [id=projects/cloud-57/topics/spendable.sync-member-request][0m
+[0m[1mgoogle_service_account.txferretrescue: Refreshing state... [id=projects/cloud-57/serviceAccounts/txferretrescue@cloud-57.iam.gserviceaccount.com][0m
+[0m[1mgoogle_project_iam_custom_role.object_creator: Refreshing state... [id=projects/cloud-57/roles/objectCreator][0m
+[0m[1mgoogle_pubsub_topic.send_notification_request: Refreshing state... [id=projects/cloud-57/topics/spendable.send-notification-request][0m
+[0m[1mgoogle_pubsub_topic.dev_send_member_request: Refreshing state... [id=projects/cloud-57/topics/spendable-dev.sync-member-request][0m
+[0m[1mgoogle_service_account.db_backups: Refreshing state... [id=projects/cloud-57/serviceAccounts/db-backups@cloud-57.iam.gserviceaccount.com][0m
+[0m[1mgoogle_storage_bucket.ferret_rescue: Refreshing state... [id=ferret-rescue][0m
+[0m[1mgoogle_pubsub_topic.dev_send_notification_request: Refreshing state... [id=projects/cloud-57/topics/spendable-dev.send-notification-request][0m
+[0m[1mgoogle_storage_bucket.helm: Refreshing state... [id=cloud-57-helm][0m
+[0m[1mgoogle_service_account.terradesk: Refreshing state... [id=projects/cloud-57/serviceAccounts/terradesk@cloud-57.iam.gserviceaccount.com][0m
+[0m[1mquerydesk_database_user.spendable: Refreshing state... [id=crd_01HTTPZ1PABEKXDSNJV1ZZS24K][0m
+[0m[1mquerydesk_database_user.querydesk: Refreshing state... [id=crd_01GH8794KEPVW80K4G031V0BBM][0m
+[0m[1mquerydesk_database_user.vibes: Refreshing state... [id=crd_01HPYPWRGVP0FGTXPHCHRX0RBX][0m
+[0m[1mquerydesk_database_user.devhub: Refreshing state... [id=crd_01J36FNDFHQMTJE8Z6S6S50PYP][0m
+[0m[1mquerydesk_database_user.devhub_licensing: Refreshing state... [id=crd_01J3BYY044CNNDWM2BE3MTDRK9][0m
+[0m[1mhelm_release.vault: Refreshing state... [id=vault][0m
+[0m[1mhelm_release.vault_secrets_operator: Refreshing state... [id=vault-secrets-operator][0m
+[0m[1mquerydesk_database_user.ferret_rescue: Refreshing state... [id=crd_01HTEG4EE0RVR9VHV7JY0W4EQH][0m
+[0m[1mquerydesk_database_user.coverbot: Refreshing state... [id=crd_01GRN1GE261X5MW91GKE0CGWVR][0m
+[0m[1mhelm_release.querydesk: Refreshing state... [id=querydesk][0m
+[0m[1mhelm_release.promtail: Refreshing state... [id=promtail][0m
+[0m[1mhelm_release.traefik: Refreshing state... [id=traefik][0m
+[0m[1mkubernetes_manifest.cloudflare: Refreshing state...[0m
+[0m[1mcloudflare_record.caa_txferretrescue_firebase: Refreshing state... [id=4ae6bdd76c32e95976e87b1bcf5183f2][0m
+[0m[1mcloudflare_record.s1_domainkey_txferretrescue: Refreshing state... [id=426c5cbfd5d9f7de1334731054186bf7][0m
+[0m[1mcloudflare_record.admin_txferretrescue: Refreshing state... [id=e5720f6f81af486927c06f15afe5d878][0m
+[0m[1mcloudflare_record.caa_txferretrescue: Refreshing state... [id=4214c9a606e49a40c8b1fbfe77134b83][0m
+[0m[1mcloudflare_record.s2_domainkey_txferretrescue: Refreshing state... [id=6fc898191a1551bc103aada2c63f549f][0m
+[0m[1mcloudflare_record.caa_txferretrescue_notify: Refreshing state... [id=aef344acb06fcfc7aad284f40e086572][0m
+[0m[1mcloudflare_record.spf_txferretrescue: Refreshing state... [id=56f603267cb7846537f7e57be82ac19d][0m
+[0m[1mcloudflare_record.em7215_txferretrescue: Refreshing state... [id=d4cebf7a47a2eece398a1b18d465ff1f][0m
+[0m[1mcloudflare_record.root_txferretrescue: Refreshing state... [id=93a26a5248051675b778b987f0bbb2e0][0m
+[0m[1mcloudflare_record.google_txferretrescue: Refreshing state... [id=97068af0d229b88ccb312ae846267062][0m
+[0m[1mcloudflare_record.dashboard_fifty_seven_media: Refreshing state... [id=c0e22e806940ace38bf118950892d834][0m
+[0m[1mcloudflare_record.root_fifty_seven_media: Refreshing state... [id=0a6013b676bbbc7f339fdc34b603492a][0m
+[0m[1mcloudflare_record.caa_fifty_seven_media_firebase: Refreshing state... [id=33128ae1297addfe338f4d26a235f48a][0m
+[0m[1mcloudflare_record.caa_fifty_seven_media_notify: Refreshing state... [id=5dec35b331c3917bc0f5d86419f5e37c][0m
+[0m[1mcloudflare_record.caa_fifty_seven_media: Refreshing state... [id=118187fc469f5b1361a9c64c878a2955][0m
+[0m[1mcloudflare_record.spf_fifty_seven_media: Refreshing state... [id=5e689d50ba8423e8452d661963cfc55d][0m
+[0m[1mcloudflare_record.google_fifty_seven_media: Refreshing state... [id=3b71bdb588c9bb72d3804dd70dfc949c][0m
+[0m[1mcloudflare_record.api_fifty_seven_media: Refreshing state... [id=13ddb07a2bb89a83d8e638852099572e][0m
+[0m[1mcloudflare_record.txt_coverbot_io: Refreshing state... [id=f990ca1af0db3a6d55e5d00077832fac][0m
+[0m[1mcloudflare_record.caa_spendable_money_notify: Refreshing state... [id=30ccca5811f7054f0e095c8d2d9d64c9][0m
+[0m[1mcloudflare_record.caa_spendable_money: Refreshing state... [id=022ec884920cb76caaa6a835d581770d][0m
+[0m[1mcloudflare_record.txt_spendable_money: Refreshing state... [id=81379fdb34d3daffaf98c1da3da1f283][0m
+[0m[1mgoogle_pubsub_subscription.send_member_request: Refreshing state... [id=projects/cloud-57/subscriptions/spendable.sync-member-request][0m
+[0m[1mgoogle_project_iam_member.spendable_pubsub_subscriber: Refreshing state... [id=cloud-57/roles/pubsub.subscriber/serviceaccount:spendable@cloud-57.iam.gserviceaccount.com][0m
+[0m[1mkubernetes_config_map_v1.spendable_workload_identity: Refreshing state... [id=spendable/workload-identity][0m
+[0m[1mgoogle_project_iam_member.spendable_pubsub_viewer: Refreshing state... [id=cloud-57/roles/pubsub.viewer/serviceaccount:spendable@cloud-57.iam.gserviceaccount.com][0m
+[0m[1mgoogle_project_iam_member.spendable_pubsub_publisher: Refreshing state... [id=cloud-57/roles/pubsub.publisher/serviceaccount:spendable@cloud-57.iam.gserviceaccount.com][0m
+[0m[1mkubernetes_config_map_v1.ferret_rescue_api_workload_identity: Refreshing state... [id=ferret-rescue-api/workload-identity][0m
+[0m[1mgoogle_pubsub_subscription.send_notification_request: Refreshing state... [id=projects/cloud-57/subscriptions/spendable.send-notification-request][0m
+[0m[1mgoogle_pubsub_subscription.dev_send_notification_request: Refreshing state... [id=projects/cloud-57/subscriptions/spendable-dev.send-notification-request][0m
+[0m[1mgoogle_pubsub_subscription.dev_send_member_request: Refreshing state... [id=projects/cloud-57/subscriptions/spendable-dev.sync-member-request][0m
+[0m[1mgoogle_storage_bucket_iam_member.txferretrescue: Refreshing state... [id=b/ferret-rescue/roles/storage.admin/serviceaccount:txferretrescue@cloud-57.iam.gserviceaccount.com][0m
+[0m[1mgoogle_storage_bucket_iam_member.db_backups: Refreshing state... [id=b/cloud-57-db-backups/projects/cloud-57/roles/objectCreator/serviceaccount:db-backups@cloud-57.iam.gserviceaccount.com][0m
+[0m[1mcloudflare_record.caa_querydesk_com: Refreshing state... [id=ec280aa8f95375d3ded351ed742457a5][0m
+[0m[1mgoogle_project_iam_member.terradesk: Refreshing state... [id=cloud-57/roles/editor/serviceAccount:terradesk@cloud-57.iam.gserviceaccount.com][0m
+[0m[1mcloudflare_record.caa_querydesk_com_notify: Refreshing state... [id=3874968bea0022a21ce4e2cc68e3f9e7][0m
+[0m[1mgoogle_iam_workload_identity_pool.terradesk: Refreshing state... [id=projects/cloud-57/locations/global/workloadIdentityPools/terradesk][0m
+[0m[1mgoogle_iam_workload_identity_pool.blue_cluster: Refreshing state... [id=projects/cloud-57/locations/global/workloadIdentityPools/blue-cluster][0m
+[0m[1mcloudflare_record.api_devhub: Refreshing state... [id=89e7b135d656866d4aca16b093ba47f8][0m
+[0m[1mcloudflare_record.root_querydesk_com: Refreshing state... [id=1a4917a495e477e788545f92ff59a7ea][0m
+[0m[1mcloudflare_record.vault_fifty_seven_media: Refreshing state... [id=c4c8cc4df8edae6bafcdb4afd6d4a1af][0m
+[0m[1mcloudflare_record.app_spendable_money: Refreshing state... [id=a191df2e50f53c3c035d30f0ef9a93c0][0m
+[0m[1mcloudflare_tunnel_config.arctic_k8s: Refreshing state... [id=043d4947-87fd-4397-8e4b-5d7cce477c01][0m
+[0m[1mcloudflare_record.root_vibes: Refreshing state... [id=b29a99206116b6de190b19941bf5918e][0m
+[0m[1mcloudflare_record.api_txferretrescue: Refreshing state... [id=49ff2fdf55425313213109daaea348be][0m
+[0m[1mcloudflare_record.licensing_devhub: Refreshing state... [id=b396d995a4f04d5f416e2ada66819d43][0m
+[0m[1mcloudflare_record.root_spendable_money: Refreshing state... [id=f9cd01745838642656864a81ae21a6ee][0m
+[0m[1mcloudflare_record.root_coverbot_io: Refreshing state... [id=b3d00c1d50ef0411abf5a17a6353093b][0m
+[0m[1mcloudflare_record.root_devhub: Refreshing state... [id=2ff5deaf69b7e6fcde3ada9946969f92][0m
+[0m[1mcloudflare_record.app_querydesk_com: Refreshing state... [id=4d2d8ee9591be05bd2d0f1ae2f44878f][0m
+[0m[1mcloudflare_record.api_querydesk_com: Refreshing state... [id=9d0fa46e121c63d0ca95979280aabda7][0m
+[0m[1mcloudflare_record.wildcard_coverbot_io: Refreshing state... [id=5d60f2d9e5566d631907fb038159fa95][0m
+[0m[1mkubernetes_secret_v1.cloudflare_tunnel: Refreshing state... [id=cloudflare/cloudflare-tunnel][0m
+[0m[1mcloudflare_record.wildcard_vibes: Refreshing state... [id=5d5d056b75700b4df0de7e7998359b86][0m
+[0m[1mmodule.ferret_rescue_db_backups.kubernetes_config_map_v1.config_map: Refreshing state... [id=ferret-rescue-api/db-backups][0m
+[0m[1mmodule.coverbot_db_backups.kubernetes_config_map_v1.config_map: Refreshing state... [id=coverbot/db-backups][0m
+[0m[1mmodule.querydesk_db_backups.kubernetes_config_map_v1.config_map: Refreshing state... [id=querydesk/db-backups][0m
+[0m[1mgoogle_iam_workload_identity_pool_provider.terradesk: Refreshing state... [id=projects/cloud-57/locations/global/workloadIdentityPools/terradesk/providers/terradesk][0m
+[0m[1mgoogle_service_account_iam_binding.terradesk_workload_identity: Refreshing state... [id=projects/cloud-57/serviceAccounts/terradesk@cloud-57.iam.gserviceaccount.com/roles/iam.workloadIdentityUser][0m
+[0m[1mgoogle_service_account_iam_binding.spendable_workload_identity: Refreshing state... [id=projects/cloud-57/serviceAccounts/spendable@cloud-57.iam.gserviceaccount.com/roles/iam.workloadIdentityUser][0m
+[0m[1mgoogle_service_account_iam_binding.txferretrescue_workload_identity: Refreshing state... [id=projects/cloud-57/serviceAccounts/txferretrescue@cloud-57.iam.gserviceaccount.com/roles/iam.workloadIdentityUser][0m
+[0m[1mgoogle_iam_workload_identity_pool_provider.blue_cluster: Refreshing state... [id=projects/cloud-57/locations/global/workloadIdentityPools/blue-cluster/providers/blue-cluster][0m
+[0m[1mgoogle_service_account_iam_binding.db_backups_workload_identity: Refreshing state... [id=projects/cloud-57/serviceAccounts/db-backups@cloud-57.iam.gserviceaccount.com/roles/iam.workloadIdentityUser][0m
+
+Terraform used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+  [32m+[0m create[0m
+  [33m~[0m update in-place[0m
+  [31m-[0m destroy[0m
+
+Terraform will perform the following actions:
+
+[1m  # cloudflare_record.app_devhub[0m will be [1m[31mdestroyed[0m
+  # (because cloudflare_record.app_devhub is not in configuration)
+[0m  [31m-[0m[0m resource "cloudflare_record" "app_devhub" {
+      [31m-[0m[0m allow_overwrite = false [90m-> null[0m[0m
+      [31m-[0m[0m created_on      = "2024-08-24T01:36:57.170113Z" [90m-> null[0m[0m
+      [31m-[0m[0m hostname        = "app.devhub.cloud" [90m-> null[0m[0m
+      [31m-[0m[0m id              = "42409edb5a5b24fbc328948f9a8b626a" [90m-> null[0m[0m
+      [31m-[0m[0m metadata        = {
+          [31m-[0m[0m "auto_added"             = "false"
+          [31m-[0m[0m "managed_by_apps"        = "false"
+          [31m-[0m[0m "managed_by_argo_tunnel" = "false"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m modified_on     = "2024-08-24T01:36:57.170113Z" [90m-> null[0m[0m
+      [31m-[0m[0m name            = "app.devhub.cloud" [90m-> null[0m[0m
+      [31m-[0m[0m proxiable       = true [90m-> null[0m[0m
+      [31m-[0m[0m proxied         = true [90m-> null[0m[0m
+      [31m-[0m[0m tags            = [] [90m-> null[0m[0m
+      [31m-[0m[0m ttl             = 1 [90m-> null[0m[0m
+      [31m-[0m[0m type            = "CNAME" [90m-> null[0m[0m
+      [31m-[0m[0m value           = "043d4947-87fd-4397-8e4b-5d7cce477c01.cfargotunnel.com" [90m-> null[0m[0m
+      [31m-[0m[0m zone_id         = "bea16ed3fb64a72370f57f5b24104950" [90m-> null[0m[0m
+        [90m# (1 unchanged attribute hidden)[0m[0m
+    }
+
+[1m  # cloudflare_record.root_devhub["devhub"][0m will be updated in-place
+[0m  [33m~[0m[0m resource "cloudflare_record" "root_devhub" {
+      [33m~[0m[0m allow_overwrite = true [33m->[0m[0m false
+        id              = "2ff5deaf69b7e6fcde3ada9946969f92"
+        name            = "devhub.tools"
+        tags            = []
+      [33m~[0m[0m value           = "marketing-site-dfd.pages.dev" [33m->[0m[0m "043d4947-87fd-4397-8e4b-5d7cce477c01.cfargotunnel.com"
+        [90m# (10 unchanged attributes hidden)[0m[0m
+    }
+
+[1m  # google_iam_workload_identity_pool_provider.terradesk[0m will be updated in-place
+[0m  [33m~[0m[0m resource "google_iam_workload_identity_pool_provider" "terradesk" {
+        id                                 = "projects/cloud-57/locations/global/workloadIdentityPools/terradesk/providers/terradesk"
+        name                               = "projects/973501356954/locations/global/workloadIdentityPools/terradesk/providers/terradesk"
+        [90m# (9 unchanged attributes hidden)[0m[0m
+
+      [33m~[0m[0m oidc {
+          [33m~[0m[0m issuer_uri        = "https://devhub.local" [33m->[0m[0m "https://terradesk.local"
+            [90m# (2 unchanged attributes hidden)[0m[0m
+        }
+    }
+
+[1m  # google_pubsub_subscription.dev_send_member_request[0][0m will be created
+[0m  [32m+[0m[0m resource "google_pubsub_subscription" "dev_send_member_request" {
+      [32m+[0m[0m ack_deadline_seconds       = 600
+      [32m+[0m[0m effective_labels           = (known after apply)
+      [32m+[0m[0m id                         = (known after apply)
+      [32m+[0m[0m message_retention_duration = "600s"
+      [32m+[0m[0m name                       = "spendable-dev.sync-member-request"
+      [32m+[0m[0m project                    = "cloud-57"
+      [32m+[0m[0m terraform_labels           = (known after apply)
+      [32m+[0m[0m topic                      = "spendable-dev.sync-member-request"
+    }
+
+[1m  # google_pubsub_subscription.dev_send_notification_request[0m will be created
+[0m  [32m+[0m[0m resource "google_pubsub_subscription" "dev_send_notification_request" {
+      [32m+[0m[0m ack_deadline_seconds       = 60
+      [32m+[0m[0m effective_labels           = (known after apply)
+      [32m+[0m[0m id                         = (known after apply)
+      [32m+[0m[0m message_retention_duration = "600s"
+      [32m+[0m[0m name                       = "spendable-dev.send-notification-request"
+      [32m+[0m[0m project                    = "cloud-57"
+      [32m+[0m[0m terraform_labels           = (known after apply)
+      [32m+[0m[0m topic                      = "spendable-dev.sync-member-request"
+    }
+
+[1m  # google_pubsub_subscription.send_notification_request[0m will be created
+[0m  [32m+[0m[0m resource "google_pubsub_subscription" "send_notification_request" {
+      [32m+[0m[0m ack_deadline_seconds       = 60
+      [32m+[0m[0m effective_labels           = (known after apply)
+      [32m+[0m[0m id                         = (known after apply)
+      [32m+[0m[0m message_retention_duration = "604800s"
+      [32m+[0m[0m name                       = "spendable.send-notification-request"
+      [32m+[0m[0m project                    = "cloud-57"
+      [32m+[0m[0m terraform_labels           = (known after apply)
+      [32m+[0m[0m topic                      = "spendable.send-notification-request"
+    }
+
+[1m  # google_service_account_iam_binding.terradesk_workload_identity[0m will be updated in-place
+[0m  [33m~[0m[0m resource "google_service_account_iam_binding" "terradesk_workload_identity" {
+        id                 = "projects/cloud-57/serviceAccounts/terradesk@cloud-57.iam.gserviceaccount.com/roles/iam.workloadIdentityUser"
+      [33m~[0m[0m members            = [
+          [31m-[0m[0m "principal://iam.googleapis.com/projects/973501356954/locations/global/workloadIdentityPools/terradesk/subject/workspace:tfws_01J9AVJ131RG6CP4Y2VK3C6SHK",
+          [32m+[0m[0m "principal://iam.googleapis.com/projects/973501356954/locations/global/workloadIdentityPools/terradesk/subject/workspace:tfw_01J005BJHK3DXTVW4N7PQ76M5Y",
+        ]
+        [90m# (3 unchanged attributes hidden)[0m[0m
+    }
+
+[1mPlan:[0m 3 to add, 3 to change, 1 to destroy.
+[0m[90m
+─────────────────────────────────────────────────────────────────────────────[0m
+
+Saved the plan to:
+/var/folders/q3/p40cjy8s4ks4v8ly3vfgvjbc0000gn/T/tfws_01J9AVJ131RG6CP4Y2VK3C6SHK/plan.out
+
+To perform exactly these actions, run the following command to apply:
+    terraform apply "/var/folders/q3/p40cjy8s4ks4v8ly3vfgvjbc0000gn/T/tfws_01J9AVJ131RG6CP4Y2VK3C6SHK/plan.out"

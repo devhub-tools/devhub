@@ -1,0 +1,94 @@
+<.navbar
+  uri={@uri}
+  active_product={@active_product}
+  active_tab={@active_tab}
+  organization={@organization}
+  user={@user}
+  permissions={@permissions}
+/>
+
+<.live_component
+  module={DevhubWeb.Components.CommandPalette}
+  id="command-palette"
+  organization_user={@organization_user}
+  active_tab={@active_tab}
+  uri={@uri}
+/>
+
+<main class="p-4 pl-64">
+  <nav
+    :if={not is_nil(assigns[:breadcrumbs])}
+    class="bg-surface-1 z-10 mx-auto mb-4 flex items-center justify-between rounded-lg p-4"
+    aria-label="Breadcrumb"
+  >
+    <ol role="list" class="flex items-center space-x-2">
+      <li>
+        <div>
+          <.link
+            :if={@active_product == :portal}
+            navigate={~p"/"}
+            class="text-gray-600 hover:text-gray-500"
+          >
+            <.icon name="hero-chart-bar-square" />
+            <span class="sr-only">Databases</span>
+          </.link>
+          <.link
+            :if={@active_product == :querydesk}
+            navigate={~p"/querydesk"}
+            class="text-gray-600 hover:text-gray-500"
+          >
+            <.icon name="devhub-querydesk" />
+            <span class="sr-only">Databases</span>
+          </.link>
+          <.link
+            :if={@active_product == :coverbot}
+            navigate={~p"/coverbot"}
+            class="text-gray-600 hover:text-gray-500"
+          >
+            <.icon name="devhub-coverbot" />
+            <span class="sr-only">Coverbot</span>
+          </.link>
+          <.link
+            :if={@active_product == :terradesk}
+            navigate={~p"/terradesk"}
+            class="text-gray-600 hover:text-gray-500"
+          >
+            <.icon name="devhub-terradesk" />
+            <span class="sr-only">TerraDesk</span>
+          </.link>
+          <.link
+            :if={is_nil(@active_product)}
+            navigate={~p"/settings/account"}
+            class="text-gray-600 hover:text-gray-500"
+          >
+            <.icon name="hero-cog-6-tooth" />
+            <span class="sr-only">Settings</span>
+          </.link>
+        </div>
+      </li>
+      <li :for={breadcrumb <- @breadcrumbs}>
+        <div class="flex items-center">
+          <.icon name="hero-chevron-right-mini" class="flex-shrink-0 text-gray-600" />
+          <.link
+            :if={not is_nil(breadcrumb[:path])}
+            navigate={breadcrumb.path}
+            class="ml-2 text-sm font-medium text-gray-600 hover:text-gray-500"
+          >
+            {breadcrumb.title}
+          </.link>
+          <span :if={is_nil(breadcrumb[:path])} class="ml-2 text-sm font-medium text-blue-700">
+            {breadcrumb.title}
+          </span>
+        </div>
+      </li>
+    </ol>
+  </nav>
+  {@inner_content}
+</main>
+
+<div
+  aria-live="assertive"
+  class="pointer-events-none fixed inset-0 z-50 flex items-end px-4 py-6 sm:items-start sm:p-6"
+>
+  <.flash_group flash={@flash} />
+</div>

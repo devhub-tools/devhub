@@ -1,0 +1,55 @@
+{
+  "action": "remove",
+  "actor": {
+    "id": "7d5237a4-3e75-4cf5-b7e4-43535a186e17",
+    "name": "Michael St Clair",
+    "email": "michaelst57@gmail.com",
+    "avatarUrl": "https://public.linear.app/7d5237a4-3e75-4cf5-b7e4-43535a186e17/42522b1d-baab-45c8-8c7b-7c382a6215a2",
+    "type": "user"
+  },
+  "createdAt": "2025-01-27T12:37:49.911Z",
+  "data": {
+    "id": "484a02d8-fe2b-4334-ba52-a5ec2e1c3b97",
+    "createdAt": "2025-01-27T05:20:25.557Z",
+    "updatedAt": "2025-01-27T05:20:25.557Z",
+    "frequencyResolution": "weekly",
+    "name": "webhook test",
+    "description": "",
+    "slugId": "883a204644f8",
+    "color": "#bec2c8",
+    "statusId": "2ecffbe7-895c-4fac-a9f9-eaef94515824",
+    "creatorId": "7d5237a4-3e75-4cf5-b7e4-43535a186e17",
+    "trashed": true,
+    "sortOrder": 16856.7,
+    "prioritySortOrder": -0.00081,
+    "priority": 0,
+    "health": null,
+    "issueCountHistory": [],
+    "completedIssueCountHistory": [],
+    "scopeHistory": [],
+    "completedScopeHistory": [],
+    "inProgressScopeHistory": [],
+    "progressHistory": [],
+    "currentProgress": {},
+    "slackNewIssue": true,
+    "slackIssueComments": true,
+    "slackIssueStatuses": true,
+    "url": "https://linear.app/devhub-tools/project/webhook-test-883a204644f8",
+    "teamIds": [
+      "2092e515-fd99-4f16-ab15-bcabcc962f5f"
+    ],
+    "memberIds": [],
+    "milestones": [],
+    "initiatives": [],
+    "status": {
+      "id": "2ecffbe7-895c-4fac-a9f9-eaef94515824",
+      "color": "#F2994A",
+      "name": "Backlog",
+      "type": "backlog"
+    }
+  },
+  "type": "Project",
+  "organizationId": "0488de27-d717-40e9-bf6f-f2fe96e08d8a",
+  "webhookTimestamp": 1737981469951,
+  "webhookId": "f44ebd2c-4469-4916-8a30-e8187d007ec2"
+}

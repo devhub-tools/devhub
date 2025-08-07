@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" class="dark h-full">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="csrf-token" content={get_csrf_token()} />
+    <.live_title>
+      {assigns[:page_title] || "Devhub"}
+    </.live_title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="mask-icon" type="image/svg+xml" href="/favicon.svg" color="#61CAFF" />
+    <link phx-track-static rel="stylesheet" href={~p"/assets/app.css"} />
+    <script defer phx-track-static type="text/javascript" src={~p"/assets/app.js"}>
+    </script>
+  </head>
+  <body class="h-full">
+    <main class="bg-surface-0 grid min-h-full place-items-center px-6 py-24 sm:py-32 lg:px-8">
+      <div class="text-center">
+        <p class="text-base font-semibold text-red-600">500</p>
+        <h1 class="text-balance mt-4 text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">
+          Internal server error
+        </h1>
+        <p class="text-pretty mt-6 text-lg font-medium text-gray-500 sm:text-xl/8">
+          Sorry, something unexpected happened.
+        </p>
+        <div class="mt-10 flex items-center justify-center gap-x-6">
+          <a
+            href="/"
+            class="rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+          >
+            Go back home
+          </a>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

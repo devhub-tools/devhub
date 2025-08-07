@@ -1,0 +1,160 @@
+<div class="grid h-screen grid-cols-1 bg-blue-50 text-gray-900 lg:grid-cols-2">
+  <div class="flex h-screen flex-col justify-center">
+    <div class="w-[400px] mx-auto rounded-lg border border-blue-400 bg-blue-200 p-10 text-center">
+      <img class="mx-auto h-16 w-auto" src="/images/querydesk-logo.svg" alt="QueryDesk" />
+      <h1 class="mt-4 text-2xl font-bold">Welcome to QueryDesk</h1>
+      <h2 class="text-gray-700">Setup MFA to continue</h2>
+
+      <div class="my-6 flex flex-col gap-4">
+        <button
+          id="manual-button"
+          class="flex w-full items-center justify-center gap-1 rounded-md bg-blue-300 py-3.5 text-gray-800 ring-inset ring-blue-600 hover:bg-blue-400 hover:ring-1 focus-visible:ring-transparent"
+        >
+          <img src="/images/fido.svg" class="size-6" />
+          <span class="font-medium">Setup Passkey</span>
+        </button>
+      </div>
+      <p class="text-sm/5 text-center text-gray-700">
+        Having trouble? For support, contact
+        <a href="mailto:support@devhub.tools" class="text-blue-700 hover:text-blue-600">
+          support@devhub.tools
+        </a>
+      </p>
+    </div>
+  </div>
+  <div class="relative m-6 hidden overflow-hidden rounded-2xl bg-blue-600 p-12 lg:flex">
+    <div class="bg-[url('/images/login-bg.png')] absolute inset-0 z-0 bg-repeat opacity-30 bg-[length:824px_588px]" />
+    <div class="bg-[linear-gradient(to_top,rgba(8,17,31,0.9),rgba(18,52,106,0.2))] absolute inset-0 z-0" />
+    <div class="absolute inset-0 z-0 overflow-hidden">
+      <!-- Shooting star logos -->
+      <div class="animate-[shooting-star_3s_ease-in-out_infinite] absolute top-1/4 left-1/4">
+        <img src="/images/logo.svg" class="size-8 opacity-20" alt="" />
+      </div>
+      <div class="animate-[shooting-star_4s_ease-in-out_infinite] absolute top-1/3 left-1/3">
+        <img src="/images/logo.svg" class="size-8 opacity-15" alt="" />
+      </div>
+      <div class="left-1/6 animate-[shooting-star_3.5s_ease-in-out_infinite] absolute top-1/2">
+        <img src="/images/logo.svg" class="size-10 opacity-25" alt="" />
+      </div>
+      <div class="animate-[shooting-star_4.5s_ease-in-out_infinite] absolute top-2/3 left-1/4">
+        <img src="/images/logo.svg" class="size-8 opacity-20" alt="" />
+      </div>
+      <div class="animate-[shooting-star_3.2s_ease-in-out_infinite] absolute top-3/4 left-1/3">
+        <img src="/images/logo.svg" class="size-7 opacity-15" alt="" />
+      </div>
+      <div class="animate-[shooting-star_3.8s_ease-in-out_infinite] top-1/6 left-1/5 absolute">
+        <img src="/images/logo.svg" class="size-11 opacity-18" alt="" />
+      </div>
+      <div class="animate-[shooting-star_4.2s_ease-in-out_infinite] top-5/6 left-1/6 absolute">
+        <img src="/images/logo.svg" class="size-6 opacity-12" alt="" />
+      </div>
+    </div>
+    <div class="bg-[url('/images/pattern.svg')] absolute inset-0 z-0 bg-repeat opacity-5" />
+    <div class="flex flex-col justify-end">
+      <div class="z-10 flex flex-col gap-y-3">
+        <.link href="https://github.com/devhub-tools" target="_blank">
+          <svg
+            width="32"
+            height="32"
+            viewBox="0 0 32 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect x="0.5" y="0.5" width="31" height="31" rx="3.5" stroke="#F9FAFB" />
+            <path
+              d="M21.5 14.5V15C21.4989 15.846 21.1918 16.6631 20.6354 17.3003C20.0789 17.9375 19.3107 18.3519 18.4725 18.4669C18.8146 18.9047 19.0003 19.4444 19 20V22.5C19 22.6326 18.9473 22.7598 18.8536 22.8536C18.7598 22.9473 18.6326 23 18.5 23H14.5C14.3674 23 14.2402 22.9473 14.1464 22.8536C14.0527 22.7598 14 22.6326 14 22.5V21.5H12.5C11.837 21.5 11.2011 21.2366 10.7322 20.7678C10.2634 20.2989 10 19.663 10 19C10 18.6022 9.84196 18.2206 9.56066 17.9393C9.27936 17.658 8.89782 17.5 8.5 17.5C8.36739 17.5 8.24021 17.4473 8.14645 17.3536C8.05268 17.2598 8 17.1326 8 17C8 16.8674 8.05268 16.7402 8.14645 16.6464C8.24021 16.5527 8.36739 16.5 8.5 16.5C8.8283 16.5 9.15339 16.5647 9.45671 16.6903C9.76002 16.8159 10.0356 17.0001 10.2678 17.2322C10.4999 17.4644 10.6841 17.74 10.8097 18.0433C10.9353 18.3466 11 18.6717 11 19C11 19.3978 11.158 19.7794 11.4393 20.0607C11.7206 20.342 12.1022 20.5 12.5 20.5H14V20C13.9997 19.4444 14.1854 18.9047 14.5275 18.4669C13.6893 18.3519 12.9211 17.9375 12.3646 17.3003C11.8082 16.6631 11.5011 15.846 11.5 15V14.5C11.5062 13.8786 11.6717 13.2692 11.9806 12.73C11.8278 12.237 11.7788 11.7177 11.8366 11.2048C11.8945 10.6919 12.058 10.1966 12.3169 9.75C12.3608 9.67397 12.4239 9.61084 12.4999 9.56696C12.576 9.52307 12.6622 9.49998 12.75 9.5C13.3324 9.49878 13.907 9.63379 14.4279 9.89424C14.9488 10.1547 15.4015 10.5334 15.75 11H17.25C17.5985 10.5334 18.0512 10.1547 18.5721 9.89424C19.093 9.63379 19.6676 9.49878 20.25 9.5C20.3378 9.49998 20.424 9.52307 20.5001 9.56696C20.5761 9.61084 20.6392 9.67397 20.6831 9.75C20.942 10.1965 21.1055 10.6919 21.1633 11.2048C21.221 11.7177 21.1718 12.2371 21.0188 12.73C21.3283 13.269 21.494 13.8785 21.5 14.5Z"
+              fill="#F5F5FA"
+              fill-opacity="0.96"
+            />
+          </svg>
+        </.link>
+
+        <p class="text-gray-900">
+          We're a team of developers, engineers, and product thinkers who've experienced the pain of database operations firsthand. We’ve been in the trenches of bad queries and worse tools, and are tired of duct-taping our way through production. We've been there, done that, and debugged the aftermath. Yes, we've also cursed at a query or two.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<.simple_form id="waf" for={%{}} action="/auth/mfa/setup" method="post">
+  <.input type="hidden" id="rawId" name="rawId" value="" />
+  <.input type="hidden" id="type" name="type" value="" />
+  <.input type="hidden" id="clientDataJSON" name="clientDataJSON" value="" />
+  <.input type="hidden" id="attestationObject" name="attestationObject" value="" />
+</.simple_form>
+
+<script nonce={@csp_nonce}>
+  function _arrayBufferToString( buffer ) {
+    var binary = '';
+    var bytes = new Uint8Array( buffer );
+    var len = bytes.byteLength;
+    for (var i = 0; i < len; i++) {
+      binary += String.fromCharCode( bytes[ i ] );
+    }
+    return binary;
+  }
+
+  function _arrayBufferToBase64( buffer ) {
+    var binary = '';
+    var bytes = new Uint8Array( buffer );
+    var len = bytes.byteLength;
+    for (var i = 0; i < len; i++) {
+      binary += String.fromCharCode( bytes[ i ] );
+    }
+    return window.btoa( binary );
+  }
+
+  function _base64ToArrayBuffer(base64) {
+      var binary_string =  window.atob(base64);
+      var len = binary_string.length;
+      var bytes = new Uint8Array( len );
+      for (var i = 0; i < len; i++)        {
+          bytes[i] = binary_string.charCodeAt(i);
+      }
+      return bytes.buffer;
+  }
+
+  const manualButton = document.getElementById('manual-button')
+
+  manualButton.addEventListener('click', function() {
+    triggerAuthenticate();
+  });
+
+  function triggerAuthenticate(){
+     navigator.credentials.create({
+    publicKey: {
+      challenge: _base64ToArrayBuffer("<%= @challenge %>"),
+      rp: {
+        id: "<%= @rpId %>",
+        name: "Devhub"
+      },
+      user: {
+        id: new TextEncoder().encode("<%= @userId %>").buffer,
+        name: "<%= @displayName %>",
+        displayName: "<%= @displayName %>"
+      },
+      pubKeyCredParams: [
+        {
+          type: "public-key", alg: -7 // "ES256" IANA COSE Algorithms registry
+        }
+      ],
+      attestation: "<%= @attestation %>",
+      authenticatorSelection: {
+        residentKey: "preferred"
+      }
+    }
+  }).then((newCredential) => {
+      document.getElementById('rawId').value = _arrayBufferToBase64(newCredential.rawId);
+      document.getElementById('type').value = newCredential.type;
+      document.getElementById('clientDataJSON').value =
+        _arrayBufferToString(newCredential.response.clientDataJSON)
+      document.getElementById('attestationObject').value =
+        _arrayBufferToBase64(newCredential.response.attestationObject)
+
+      document.getElementById('waf').submit();
+    }).catch((err) => {
+      console.log(err);
+    });
+  }
+</script>

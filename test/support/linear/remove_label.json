@@ -1,0 +1,25 @@
+{
+  "action": "remove",
+  "actor": {
+    "id": "7d5237a4-3e75-4cf5-b7e4-43535a186e17",
+    "name": "Michael St Clair",
+    "email": "michaelst57@gmail.com",
+    "avatarUrl": "https://public.linear.app/7d5237a4-3e75-4cf5-b7e4-43535a186e17/42522b1d-baab-45c8-8c7b-7c382a6215a2",
+    "type": "user"
+  },
+  "createdAt": "2025-01-27T12:41:21.961Z",
+  "data": {
+    "id": "3c0f3b5a-147f-4527-9d39-2e39de41fbeb",
+    "createdAt": "2025-01-27T12:40:43.153Z",
+    "updatedAt": "2025-01-27T12:41:03.324Z",
+    "name": "Test",
+    "color": "#26b5ce",
+    "organizationId": "0488de27-d717-40e9-bf6f-f2fe96e08d8a",
+    "creatorId": "7d5237a4-3e75-4cf5-b7e4-43535a186e17",
+    "isGroup": false
+  },
+  "type": "IssueLabel",
+  "organizationId": "0488de27-d717-40e9-bf6f-f2fe96e08d8a",
+  "webhookTimestamp": 1737981681993,
+  "webhookId": "f44ebd2c-4469-4916-8a30-e8187d007ec2"
+}

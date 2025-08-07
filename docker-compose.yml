@@ -1,0 +1,58 @@
+services:
+  postgres:
+    image: postgres:17
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: postgres
+    command:
+      - "postgres"
+      - "-c"
+      - "wal_level=logical"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  query_parser:
+    image: ghcr.io/devhub-tools/query-parser:v1.0.0
+    restart: always
+    pull_policy: always
+    ports:
+      - "50051:50051"
+
+  request_tracer:
+    image: ghcr.io/devhub-tools/request-tracer:v1.0.0
+    restart: always
+    pull_policy: always
+    ports:
+      - "50052:50052"
+
+  mysql:
+    image: mysql:8.0
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    volumes:
+      - mysqldata:/var/lib/mysql
+    ports:
+      - "3306:3306"
+
+  clickhouse:
+    image: clickhouse/clickhouse-server:latest
+    restart: always
+    environment:
+      CLICKHOUSE_PASSWORD: clickhouse
+    volumes:
+      - clickhousedata:/var/lib/clickhouse
+    ports:
+      - "8123:8123"
+      - "9000:9000"
+    ulimits:
+      nofile:
+        soft: 262144
+        hard: 262144
+
+volumes:
+  pgdata:
+  mysqldata:
+  clickhousedata:

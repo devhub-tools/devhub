@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<testsuites>
+    <testsuite errors="1" failures="0" skipped="0" name="Elixir.Devhub.Agents.ClientTest" tests="1" time="0.0000">
+        <properties>
+            <property name="date" value="2025-03-19T01:59:55.419505Z"/>
+            <property name="seed" value="408788"/>
+        </properties>
+        <testcase file="lib/devhub/agents/client_test.exs" classname="Elixir.Devhub.Agents.ClientTest" name="test success" time="0.0000">
+            <error message="Invalid module Elixir.ExUnit.TestModule">%ExUnit.TestModule{file: "/Users/gaia/devhub/devhub/lib/devhub/agents/client_test.exs", name: Devhub.Agents.ClientTest, setup_all?: true, state: {:failed, [{{:EXIT, #PID&lt;0.1033.0&gt;}, :killed, []}]}, parameters: %{}, tags: %{}, tests: [%ExUnit.Test{name: :"test success", case: Devhub.Agents.ClientTest, module: Devhub.Agents.ClientTest, state: nil, time: 0, tags: %{line: 14, registered: %{}, file: "/Users/gaia/devhub/devhub/lib/devhub/agents/client_test.exs", describe: nil, describe_line: nil, test_type: :test}, logs: "", parameters: %{}}]}</error>
+        </testcase>
+    </testsuite>
+    <testsuite errors="0" failures="0" skipped="0" name="Elixir.Devhub.ApiKeysTest" tests="1" time="0.1526">
+        <properties>
+            <property name="date" value="2025-03-19T01:59:55.419505Z"/>
+            <property name="seed" value="408788"/>
+        </properties>
+        <testcase file="lib/devhub/api_keys_test.exs" classname="Elixir.Devhub.ApiKeysTest" name="test api_key flow" time="0.1526"/>
+    </testsuite>
+    <testsuite errors="0" failures="1" skipped="0" name="Elixir.Devhub.QueryDesk.Actions.TestConnectionTest" tests="6" time="0.2075">
+        <properties>
+            <property name="date" value="2025-03-19T01:59:55.419505Z"/>
+            <property name="seed" value="408788"/>
+        </properties>
+        <testcase file="lib/devhub/querydesk/actions/test_connection_test.exs" classname="Elixir.Devhub.QueryDesk.Actions.TestConnectionTest" name="test postgres success" time="0.0099"/>
+        <testcase file="lib/devhub/querydesk/actions/test_connection_test.exs" classname="Elixir.Devhub.QueryDesk.Actions.TestConnectionTest" name="test mysql bad host" time="0.0065"/>
+        <testcase file="lib/devhub/querydesk/actions/test_connection_test.exs" classname="Elixir.Devhub.QueryDesk.Actions.TestConnectionTest" name="test postgres bad creds" time="0.0106">
+            <failure message="match (=) failed">  3) test postgres bad creds (Devhub.QueryDesk.Actions.TestConnectionTest)
+     lib/devhub/querydesk/actions/test_connection_test.exs:21
+     match (=) failed
+     code:  assert {:error, "password authentication failed for user \"postgres\""} =
+              QueryDesk.test_connection(database, credential_id)
+     left:  {:error, "password authentication failed for user \"postgres\""}
+     right: :ok
+     stacktrace:
+       lib/devhub/querydesk/actions/test_connection_test.exs:32: (test)
+</failure>
+        </testcase>
+        <testcase file="lib/devhub/querydesk/actions/test_connection_test.exs" classname="Elixir.Devhub.QueryDesk.Actions.TestConnectionTest" name="test postgres bad host" time="0.0072"/>
+        <testcase file="lib/devhub/querydesk/actions/test_connection_test.exs" classname="Elixir.Devhub.QueryDesk.Actions.TestConnectionTest" name="test mysql bad creds" time="0.0211"/>
+        <testcase file="lib/devhub/querydesk/actions/test_connection_test.exs" classname="Elixir.Devhub.QueryDesk.Actions.TestConnectionTest" name="test mysql success" time="0.1522"/>
+    </testsuite>
+    <testsuite errors="0" failures="0" skipped="1" name="Elixir.Devhub.CalendarTest" tests="4" time="0.1677">
+        <properties>
+            <property name="date" value="2025-03-19T01:59:55.419505Z"/>
+            <property name="seed" value="408788"/>
+        </properties>
+        <testcase file="lib/devhub/calendar_test.exs" classname="Elixir.Devhub.CalendarTest" name="test create_event/1" time="0.0078"/>
+        <testcase file="lib/devhub/calendar_test.exs" classname="Elixir.Devhub.CalendarTest" name="test sync/1" time="0.0902"/>
+        <testcase file="lib/devhub/calendar_test.exs" classname="Elixir.Devhub.CalendarTest" name="test count_business_days/2" time="0.0697"/>
+        <testcase file="lib/devhub/calendar_test.exs" classname="Elixir.Devhub.CalendarTest" name="test get_events/3" time="0.0000">
+            <skipped message="due to skip filter"/>
+        </testcase>
+    </testsuite>
+</testsuites>
