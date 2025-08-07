@@ -1,0 +1,781 @@
+{
+  "Devhub Colors": {
+    "name": "Devhub Colors",
+    "Primary Blue": {
+      "Gray 50": {
+        "name": "Primary Blue/Gray 50",
+        "description": "",
+        "value": "#08111f",
+        "type": "color"
+      },
+      "Gray 100": {
+        "name": "Primary Blue/Gray 100",
+        "description": "",
+        "value": "#0d1e38",
+        "type": "color"
+      },
+      "Gray 200": {
+        "name": "Primary Blue/Gray 200",
+        "description": "",
+        "value": "#102951",
+        "type": "color"
+      },
+      "Gray 300": {
+        "name": "Primary Blue/Gray 300",
+        "description": "",
+        "value": "#12346a",
+        "type": "color"
+      },
+      "Gray 400": {
+        "name": "Primary Blue/Gray 400",
+        "description": "",
+        "value": "#144a96",
+        "type": "color"
+      },
+      "Gray 500": {
+        "name": "Primary Blue/Gray 500",
+        "description": "",
+        "value": "#1d6dbc",
+        "type": "color"
+      },
+      "Gray 600": {
+        "name": "Primary Blue/Gray 600",
+        "description": "",
+        "value": "#3098e3",
+        "type": "color"
+      },
+      "Gray 700": {
+        "name": "Primary Blue/Gray 700",
+        "description": "",
+        "value": "#61caff",
+        "type": "color"
+      },
+      "Gray 800": {
+        "name": "Primary Blue/Gray 800",
+        "description": "",
+        "value": "#9addff",
+        "type": "color"
+      },
+      "Gray 900": {
+        "name": "Primary Blue/Gray 900",
+        "description": "",
+        "value": "#9addff",
+        "type": "color"
+      }
+    },
+    "Surface": {
+      "Surface 0": {
+        "name": "Surface/Surface 0",
+        "description": "",
+        "value": "#06070a",
+        "type": "color"
+      },
+      "Surface 1": {
+        "name": "Surface/Surface 1",
+        "description": "",
+        "value": "#0d1014",
+        "type": "color"
+      },
+      "Surface 2": {
+        "name": "Surface/Surface 2",
+        "description": "",
+        "value": "#1c1f23",
+        "type": "color"
+      },
+      "Surface 3": {
+        "name": "Surface/Surface 3",
+        "description": "",
+        "value": "#212429",
+        "type": "color"
+      },
+      "Surface 4": {
+        "name": "Surface/Surface 4",
+        "description": "",
+        "value": "#2c2f33",
+        "type": "color"
+      }
+    },
+    "Alpha": {
+      "Alpha 4": {
+        "name": "Alpha/Alpha 4",
+        "description": "",
+        "value": "#f9fafb",
+        "type": "color"
+      },
+      "Alpha 8": {
+        "name": "Alpha/Alpha 8",
+        "description": "",
+        "value": "#f9fafb",
+        "type": "color"
+      },
+      "Alpha 16": {
+        "name": "Alpha/Alpha 16",
+        "description": "",
+        "value": "#f9fafb",
+        "type": "color"
+      },
+      "Alpha 24": {
+        "name": "Alpha/Alpha 24",
+        "description": "",
+        "value": "#f9fafb",
+        "type": "color"
+      },
+      "Alpha 32": {
+        "name": "Alpha/Alpha 32",
+        "description": "",
+        "value": "#f9fafb",
+        "type": "color"
+      },
+      "Alpha 40": {
+        "name": "Alpha/Alpha 40",
+        "description": "",
+        "value": "#f9fafb",
+        "type": "color"
+      },
+      "Alpha 64": {
+        "name": "Alpha/Alpha 64",
+        "description": "",
+        "value": "#f9fafb",
+        "type": "color"
+      },
+      "Alpha 72": {
+        "name": "Alpha/Alpha 72",
+        "description": "",
+        "value": "#f9fafb",
+        "type": "color"
+      },
+      "Alpha 80": {
+        "name": "Alpha/Alpha 80",
+        "description": "",
+        "value": "#f9fafb",
+        "type": "color"
+      },
+      "Alpha 88": {
+        "name": "Alpha/Alpha 88",
+        "description": "",
+        "value": "#f9fafb",
+        "type": "color"
+      }
+    },
+    "Gray": {
+      "Gray 50": {
+        "name": "Gray/Gray 50",
+        "description": "",
+        "value": "#111827",
+        "type": "color"
+      },
+      "Gray 100": {
+        "name": "Gray/Gray 100",
+        "description": "",
+        "value": "#1f2937",
+        "type": "color"
+      },
+      "Gray 200": {
+        "name": "Gray/Gray 200",
+        "description": "",
+        "value": "#374151",
+        "type": "color"
+      },
+      "Gray 300": {
+        "name": "Gray/Gray 300",
+        "description": "",
+        "value": "#4b5563",
+        "type": "color"
+      },
+      "Gray 400": {
+        "name": "Gray/Gray 400",
+        "description": "",
+        "value": "#6b7280",
+        "type": "color"
+      },
+      "Gray 500": {
+        "name": "Gray/Gray 500",
+        "description": "",
+        "value": "#9ca3af",
+        "type": "color"
+      },
+      "Gray 600": {
+        "name": "Gray/Gray 600",
+        "description": "",
+        "value": "#d1d5db",
+        "type": "color"
+      },
+      "Gray 700": {
+        "name": "Gray/Gray 700",
+        "description": "",
+        "value": "#e5e7eb",
+        "type": "color"
+      },
+      "Gray 800": {
+        "name": "Gray/Gray 800",
+        "description": "",
+        "value": "#f3f4f6",
+        "type": "color"
+      },
+      "Gray 900": {
+        "name": "Gray/Gray 900",
+        "description": "",
+        "value": "#f9fafb",
+        "type": "color"
+      }
+    },
+    "Red": {
+      "Red 50": {
+        "name": "Red/Red 50",
+        "description": "",
+        "value": "#771d1d",
+        "type": "color"
+      },
+      "Red 100": {
+        "name": "Red/Red 100",
+        "description": "",
+        "value": "#9b1c1c",
+        "type": "color"
+      },
+      "Red 200": {
+        "name": "Red/Red 200",
+        "description": "",
+        "value": "#c81e1e",
+        "type": "color"
+      },
+      "Red 300": {
+        "name": "Red/Red 300",
+        "description": "",
+        "value": "#e02424",
+        "type": "color"
+      },
+      "Red 400": {
+        "name": "Red/Red 400",
+        "description": "",
+        "value": "#f05252",
+        "type": "color"
+      },
+      "Red 500": {
+        "name": "Red/Red 500",
+        "description": "",
+        "value": "#f98080",
+        "type": "color"
+      },
+      "Red 600": {
+        "name": "Red/Red 600",
+        "description": "",
+        "value": "#f8b4b4",
+        "type": "color"
+      },
+      "Red 700": {
+        "name": "Red/Red 700",
+        "description": "",
+        "value": "#fbd5d5",
+        "type": "color"
+      },
+      "Red 800": {
+        "name": "Red/Red 800",
+        "description": "",
+        "value": "#fde8e8",
+        "type": "color"
+      },
+      "Red 900": {
+        "name": "Red/Red 900",
+        "description": "",
+        "value": "#fdf2f2",
+        "type": "color"
+      }
+    },
+    "Orange": {
+      "Orange 50": {
+        "name": "Orange/Orange 50",
+        "description": "",
+        "value": "#7c2d12",
+        "type": "color"
+      },
+      "Orange 100": {
+        "name": "Orange/Orange 100",
+        "description": "",
+        "value": "#9a3412",
+        "type": "color"
+      },
+      "Orange 200": {
+        "name": "Orange/Orange 200",
+        "description": "",
+        "value": "#c2410c",
+        "type": "color"
+      },
+      "Orange 300": {
+        "name": "Orange/Orange 300",
+        "description": "",
+        "value": "#ea580c",
+        "type": "color"
+      },
+      "Orange 400": {
+        "name": "Orange/Orange 400",
+        "description": "",
+        "value": "#f97316",
+        "type": "color"
+      },
+      "Orange 500": {
+        "name": "Orange/Orange 500",
+        "description": "",
+        "value": "#fb923c",
+        "type": "color"
+      },
+      "Orange 600": {
+        "name": "Orange/Orange 600",
+        "description": "",
+        "value": "#fdba74",
+        "type": "color"
+      },
+      "Orange 700": {
+        "name": "Orange/Orange 700",
+        "description": "",
+        "value": "#fed7aa",
+        "type": "color"
+      },
+      "Orange 800": {
+        "name": "Orange/Orange 800",
+        "description": "",
+        "value": "#ffedd5",
+        "type": "color"
+      },
+      "Orange 900": {
+        "name": "Orange/Orange 900",
+        "description": "",
+        "value": "#fff7ed",
+        "type": "color"
+      }
+    },
+    "Yellow": {
+      "Yellow 50": {
+        "name": "Yellow/Yellow 50",
+        "description": "",
+        "value": "#633112",
+        "type": "color"
+      },
+      "Yellow 100": {
+        "name": "Yellow/Yellow 100",
+        "description": "",
+        "value": "#723b13",
+        "type": "color"
+      },
+      "Yellow 200": {
+        "name": "Yellow/Yellow 200",
+        "description": "",
+        "value": "#8e4b10",
+        "type": "color"
+      },
+      "Yellow 300": {
+        "name": "Yellow/Yellow 300",
+        "description": "",
+        "value": "#9f580a",
+        "type": "color"
+      },
+      "Yellow 400": {
+        "name": "Yellow/Yellow 400",
+        "description": "",
+        "value": "#c27803",
+        "type": "color"
+      },
+      "Yellow 500": {
+        "name": "Yellow/Yellow 500",
+        "description": "",
+        "value": "#e3a008",
+        "type": "color"
+      },
+      "Yellow 600": {
+        "name": "Yellow/Yellow 600",
+        "description": "",
+        "value": "#faca15",
+        "type": "color"
+      },
+      "Yellow 700": {
+        "name": "Yellow/Yellow 700",
+        "description": "",
+        "value": "#fce96a",
+        "type": "color"
+      },
+      "Yellow 800": {
+        "name": "Yellow/Yellow 800",
+        "description": "",
+        "value": "#fdf6b2",
+        "type": "color"
+      },
+      "Yellow 900": {
+        "name": "Yellow/Yellow 900",
+        "description": "",
+        "value": "#fdfdea",
+        "type": "color"
+      }
+    },
+    "Green": {
+      "Green 50": {
+        "name": "Green/Green 50",
+        "description": "",
+        "value": "#014737",
+        "type": "color"
+      },
+      "Green 100": {
+        "name": "Green/Green 100",
+        "description": "",
+        "value": "#03543f",
+        "type": "color"
+      },
+      "Green 200": {
+        "name": "Green/Green 200",
+        "description": "",
+        "value": "#046c4e",
+        "type": "color"
+      },
+      "Green 300": {
+        "name": "Green/Green 300",
+        "description": "",
+        "value": "#057a55",
+        "type": "color"
+      },
+      "Green 400": {
+        "name": "Green/Green 400",
+        "description": "",
+        "value": "#0e9f6e",
+        "type": "color"
+      },
+      "Green 500": {
+        "name": "Green/Green 500",
+        "description": "",
+        "value": "#31c48d",
+        "type": "color"
+      },
+      "Green 600": {
+        "name": "Green/Green 600",
+        "description": "",
+        "value": "#84e1bc",
+        "type": "color"
+      },
+      "Green 700": {
+        "name": "Green/Green 700",
+        "description": "",
+        "value": "#bcf0da",
+        "type": "color"
+      },
+      "Green 800": {
+        "name": "Green/Green 800",
+        "description": "",
+        "value": "#def7ec",
+        "type": "color"
+      },
+      "Green 900": {
+        "name": "Green/Green 900",
+        "description": "",
+        "value": "#f3faf7",
+        "type": "color"
+      }
+    },
+    "Teal": {
+      "Green 50": {
+        "name": "Teal/Green 50",
+        "description": "",
+        "value": "#134e4a",
+        "type": "color"
+      },
+      "Green 100": {
+        "name": "Teal/Green 100",
+        "description": "",
+        "value": "#115e59",
+        "type": "color"
+      },
+      "Green 200": {
+        "name": "Teal/Green 200",
+        "description": "",
+        "value": "#0f766e",
+        "type": "color"
+      },
+      "Green 300": {
+        "name": "Teal/Green 300",
+        "description": "",
+        "value": "#0d9488",
+        "type": "color"
+      },
+      "Green 400": {
+        "name": "Teal/Green 400",
+        "description": "",
+        "value": "#14b8a6",
+        "type": "color"
+      },
+      "Green 500": {
+        "name": "Teal/Green 500",
+        "description": "",
+        "value": "#31c48d",
+        "type": "color"
+      },
+      "Green 600": {
+        "name": "Teal/Green 600",
+        "description": "",
+        "value": "#5eead4",
+        "type": "color"
+      },
+      "Green 700": {
+        "name": "Teal/Green 700",
+        "description": "",
+        "value": "#99f6e4",
+        "type": "color"
+      },
+      "Green 800": {
+        "name": "Teal/Green 800",
+        "description": "",
+        "value": "#ccfbf1",
+        "type": "color"
+      },
+      "Green 900": {
+        "name": "Teal/Green 900",
+        "description": "",
+        "value": "#f0fdfa",
+        "type": "color"
+      }
+    },
+    "Blue": {
+      "Blue 50": {
+        "name": "Blue/Blue 50",
+        "description": "",
+        "value": "#233876",
+        "type": "color"
+      },
+      "Blue 100": {
+        "name": "Blue/Blue 100",
+        "description": "",
+        "value": "#1e429f",
+        "type": "color"
+      },
+      "Blue 200": {
+        "name": "Blue/Blue 200",
+        "description": "",
+        "value": "#1a56db",
+        "type": "color"
+      },
+      "Blue 300": {
+        "name": "Blue/Blue 300",
+        "description": "",
+        "value": "#1c64f2",
+        "type": "color"
+      },
+      "Blue 400": {
+        "name": "Blue/Blue 400",
+        "description": "",
+        "value": "#3f83f8",
+        "type": "color"
+      },
+      "Blue 500": {
+        "name": "Blue/Blue 500",
+        "description": "",
+        "value": "#76a9fa",
+        "type": "color"
+      },
+      "Blue 600": {
+        "name": "Blue/Blue 600",
+        "description": "",
+        "value": "#a4cafe",
+        "type": "color"
+      },
+      "Blue 700": {
+        "name": "Blue/Blue 700",
+        "description": "",
+        "value": "#c3ddfd",
+        "type": "color"
+      },
+      "Blue 800": {
+        "name": "Blue/Blue 800",
+        "description": "",
+        "value": "#e1effe",
+        "type": "color"
+      },
+      "Blue 900": {
+        "name": "Blue/Blue 900",
+        "description": "",
+        "value": "#ebf5ff",
+        "type": "color"
+      }
+    },
+    "Indigo": {
+      "Indigo 50": {
+        "name": "Indigo/Indigo 50",
+        "description": "",
+        "value": "#362f78",
+        "type": "color"
+      },
+      "Indigo 100": {
+        "name": "Indigo/Indigo 100",
+        "description": "",
+        "value": "#42389d",
+        "type": "color"
+      },
+      "Indigo 200": {
+        "name": "Indigo/Indigo 200",
+        "description": "",
+        "value": "#5145cd",
+        "type": "color"
+      },
+      "Indigo 300": {
+        "name": "Indigo/Indigo 300",
+        "description": "",
+        "value": "#5850ec",
+        "type": "color"
+      },
+      "Indigo 400": {
+        "name": "Indigo/Indigo 400",
+        "description": "",
+        "value": "#6875f5",
+        "type": "color"
+      },
+      "Indigo 500": {
+        "name": "Indigo/Indigo 500",
+        "description": "",
+        "value": "#8da2fb",
+        "type": "color"
+      },
+      "Indigo 600": {
+        "name": "Indigo/Indigo 600",
+        "description": "",
+        "value": "#b4c6fc",
+        "type": "color"
+      },
+      "Indigo 700": {
+        "name": "Indigo/Indigo 700",
+        "description": "",
+        "value": "#cddbfe",
+        "type": "color"
+      },
+      "Indigo 800": {
+        "name": "Indigo/Indigo 800",
+        "description": "",
+        "value": "#e5edff",
+        "type": "color"
+      },
+      "Indigo 900": {
+        "name": "Indigo/Indigo 900",
+        "description": "",
+        "value": "#f0f5ff",
+        "type": "color"
+      }
+    },
+    "Purple": {
+      "Purple 50": {
+        "name": "Purple/Purple 50",
+        "description": "",
+        "value": "#4a1d96",
+        "type": "color"
+      },
+      "Purple 100": {
+        "name": "Purple/Purple 100",
+        "description": "",
+        "value": "#5521b5",
+        "type": "color"
+      },
+      "Purple 200": {
+        "name": "Purple/Purple 200",
+        "description": "",
+        "value": "#6c2bd9",
+        "type": "color"
+      },
+      "Purple 300": {
+        "name": "Purple/Purple 300",
+        "description": "",
+        "value": "#7e3af2",
+        "type": "color"
+      },
+      "Purple 400": {
+        "name": "Purple/Purple 400",
+        "description": "",
+        "value": "#9061f9",
+        "type": "color"
+      },
+      "Purple 500": {
+        "name": "Purple/Purple 500",
+        "description": "",
+        "value": "#ac94fa",
+        "type": "color"
+      },
+      "Purple 600": {
+        "name": "Purple/Purple 600",
+        "description": "",
+        "value": "#cabffd",
+        "type": "color"
+      },
+      "Purple 700": {
+        "name": "Purple/Purple 700",
+        "description": "",
+        "value": "#dcd7fe",
+        "type": "color"
+      },
+      "Purple 800": {
+        "name": "Purple/Purple 800",
+        "description": "",
+        "value": "#edebfe",
+        "type": "color"
+      },
+      "Purple 900": {
+        "name": "Purple/Purple 900",
+        "description": "",
+        "value": "#f6f5ff",
+        "type": "color"
+      }
+    },
+    "Pink": {
+      "Pink 50": {
+        "name": "Pink/Pink 50",
+        "description": "",
+        "value": "#751a3d",
+        "type": "color"
+      },
+      "Pink 100": {
+        "name": "Pink/Pink 100",
+        "description": "",
+        "value": "#99154b",
+        "type": "color"
+      },
+      "Pink 200": {
+        "name": "Pink/Pink 200",
+        "description": "",
+        "value": "#bf125d",
+        "type": "color"
+      },
+      "Pink 300": {
+        "name": "Pink/Pink 300",
+        "description": "",
+        "value": "#d61f69",
+        "type": "color"
+      },
+      "Pink 400": {
+        "name": "Pink/Pink 400",
+        "description": "",
+        "value": "#e74694",
+        "type": "color"
+      },
+      "Pink 500": {
+        "name": "Pink/Pink 500",
+        "description": "",
+        "value": "#f17eb8",
+        "type": "color"
+      },
+      "Pink 600": {
+        "name": "Pink/Pink 600",
+        "description": "",
+        "value": "#f8b4d9",
+        "type": "color"
+      },
+      "Pink 700": {
+        "name": "Pink/Pink 700",
+        "description": "",
+        "value": "#fad1e8",
+        "type": "color"
+      },
+      "Pink 800": {
+        "name": "Pink/Pink 800",
+        "description": "",
+        "value": "#fce8f3",
+        "type": "color"
+      },
+      "Pink 900": {
+        "name": "Pink/Pink 900",
+        "description": "",
+        "value": "#fdf2f8",
+        "type": "color"
+      }
+    }
+  }
+}

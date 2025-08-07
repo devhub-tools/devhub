@@ -1,0 +1,32 @@
+{
+  "action": "update",
+  "actor": {
+    "id": "ef7da9e2-9714-43d3-ae57-c61f3f4fa0ae",
+    "name": "Michael St Clair",
+    "email": "michael@devhub.tools",
+    "avatarUrl": "https://public.linear.app/ef7da9e2-9714-43d3-ae57-c61f3f4fa0ae/0a1576bd-b3f4-494f-bec7-3048e09d0cb8",
+    "type": "user"
+  },
+  "createdAt": "2025-01-27T12:45:12.994Z",
+  "data": {
+    "id": "ef7da9e2-9714-43d3-ae57-c61f3f4fa0ae",
+    "name": "Michael St Clair",
+    "displayName": "michael1",
+    "email": "michael@devhub.tools",
+    "avatarUrl": "https://public.linear.app/ef7da9e2-9714-43d3-ae57-c61f3f4fa0ae/0a1576bd-b3f4-494f-bec7-3048e09d0cb8",
+    "timezone": "America/Denver",
+    "guest": false,
+    "active": false,
+    "disableReason": "adminSuspended"
+  },
+  "updatedFrom": {
+    "updatedAt": "2025-01-27T12:44:03.523Z",
+    "disableReason": null,
+    "active": true
+  },
+  "url": "https://linear.app/devhub-tools/profiles/michael1",
+  "type": "User",
+  "organizationId": "0488de27-d717-40e9-bf6f-f2fe96e08d8a",
+  "webhookTimestamp": 1737981913098,
+  "webhookId": "f44ebd2c-4469-4916-8a30-e8187d007ec2"
+}

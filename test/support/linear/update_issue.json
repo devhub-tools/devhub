@@ -1,0 +1,83 @@
+{
+  "action": "update",
+  "actor": {
+    "id": "ab20def6-0589-4b6d-acbc-75b10971c7c4",
+    "name": "Michael St Clair",
+    "type": "user"
+  },
+  "createdAt": "2024-06-07T21:00:15.298Z",
+  "data": {
+    "id": "04d11ccf-e2fc-46de-9c00-73a126effcbd",
+    "createdAt": "2024-05-09T23:01:59.284Z",
+    "updatedAt": "2024-06-07T21:00:15.329Z",
+    "number": 3355,
+    "title": "Connect knows when an invite has been created",
+    "priority": 3,
+    "estimate": 1,
+    "boardOrder": 0,
+    "sortOrder": -1839007,
+    "startedAt": "2024-05-28T19:49:53.528Z",
+    "completedAt": "2024-06-05T16:22:09.457Z",
+    "labelIds": [],
+    "teamId": "9a427416-3085-42f9-a0b5-96d55f628ec7",
+    "projectId": "8208c065-6c67-46c8-870b-02da25c894c7",
+    "projectMilestoneId": "966a4525-4b2f-4fdc-be4d-c57aec17ec9e",
+    "lastAppliedTemplateId": "a5b37fba-2388-4daf-bafa-5095c8123dde",
+    "previousIdentifiers": [],
+    "creatorId": "7eee751f-6b15-412d-a035-972ee8a1e67a",
+    "assigneeId": "adbbacda-2568-4d5f-83ad-679be8d7c5d5",
+    "stateId": "a3f952e5-3581-447d-b958-df8196f2ed04",
+    "priorityLabel": "Medium",
+    "botActor": null,
+    "identifier": "HOU-3355",
+    "url": "https://linear.app/pdq/issue/HOU-3355/connect-knows-when-an-invite-has-been-created",
+    "assignee": {
+      "id": "adbbacda-2568-4d5f-83ad-679be8d7c5d5",
+      "name": "Cody Bender"
+    },
+    "project": {
+      "id": "8208c065-6c67-46c8-870b-02da25c894c7",
+      "name": "Connect on Portal and Auth"
+    },
+    "state": {
+      "id": "a3f952e5-3581-447d-b958-df8196f2ed04",
+      "color": "#5e6ad2",
+      "name": "Done",
+      "type": "completed"
+    },
+    "team": {
+      "id": "9a427416-3085-42f9-a0b5-96d55f628ec7",
+      "key": "HOU",
+      "name": "Connect"
+    },
+    "milestone": {
+      "id": "966a4525-4b2f-4fdc-be4d-c57aec17ec9e",
+      "name": "Handle invite events from portal"
+    },
+    "subscriberIds": [
+      "7eee751f-6b15-412d-a035-972ee8a1e67a",
+      "adbbacda-2568-4d5f-83ad-679be8d7c5d5",
+      "8fd69921-d86f-4032-b0aa-212513b07cdd",
+      "8b24b53b-c562-4927-9982-323e06ab89ae"
+    ],
+    "labels": [
+      {
+        "id": "6db94ee8-8eb9-40c1-b695-a4e9b09b2cdc",
+        "color": "#f7c8c1",
+        "name": "test",
+        "parentId": "038ab87a-ca9c-4076-8009-21a3724be9b0"
+      }
+    ],
+    "description": "# Acceptance criteria:\n\n- [ ] Connect consumes the `accounts.member-invited` event from portal\n  - [ ] Remove blocked emails from the `deleted_users` (needs to be revertible for cancellations)\n\n# Notes:",
+    "descriptionData": "{\"type\":\"doc\",\"content\":[{\"type\":\"heading\",\"attrs\":{\"level\":1,\"id\":\"8ea2e398-7527-477b-9918-c9001df1870c\"},\"content\":[{\"type\":\"text\",\"text\":\"Acceptance criteria:\"}]},{\"type\":\"todo_list\",\"content\":[{\"type\":\"todo_item\",\"attrs\":{\"done\":false},\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Connect consumes the \"},{\"type\":\"text\",\"text\":\"accounts.member-invited\",\"marks\":[{\"type\":\"code\",\"attrs\":{}}]},{\"type\":\"text\",\"text\":\" event from portal\"}]},{\"type\":\"todo_list\",\"content\":[{\"type\":\"todo_item\",\"attrs\":{\"done\":false},\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"Remove blocked emails from the \"},{\"type\":\"text\",\"text\":\"deleted_users\",\"marks\":[{\"type\":\"code\",\"attrs\":{}}]},{\"type\":\"text\",\"text\":\" (needs to be revertible for cancellations)\"}]}]}]}]}]},{\"type\":\"paragraph\"},{\"type\":\"heading\",\"attrs\":{\"level\":1,\"id\":\"84276710-1ea1-4ad6-a012-3c78f6900aa7\"},\"content\":[{\"type\":\"text\",\"text\":\"Notes:\"}]},{\"type\":\"paragraph\"}]}"
+  },
+  "updatedFrom": {
+    "updatedAt": "2024-06-05T16:22:09.510Z",
+    "priority": 0
+  },
+  "url": "https://linear.app/pdq/issue/HOU-3355/connect-knows-when-an-invite-has-been-created",
+  "type": "Issue",
+  "organizationId": "0488de27-d717-40e9-bf6f-f2fe96e08d8a",
+  "webhookTimestamp": 1717794018853,
+  "webhookId": "191a736d-ab08-47dc-8f4d-fd71a852eed4"
+}

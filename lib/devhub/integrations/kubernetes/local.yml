@@ -1,0 +1,36 @@
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: devhub
+  namespace: devhub
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: devhub
+  namespace: devhub
+rules:
+- apiGroups: ["batch"]
+  resources: ["jobs"]
+  verbs: ["create", "delete"]
+- apiGroups: [""]
+  resources: ["pods", "pods/log"]
+  verbs: ["list", "get"]
+- apiGroups: [""]
+  resources: ["secrets", "serviceaccounts/token"]
+  verbs: ["create", "update"]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: devhub
+  namespace: devhub
+subjects:
+- kind: ServiceAccount
+  name: devhub
+  namespace: devhub
+roleRef:
+  kind: Role
+  name: devhub
+  apiGroup: rbac.authorization.k8s.io

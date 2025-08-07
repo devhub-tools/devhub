@@ -1,0 +1,9 @@
+@import "tailwindcss/utilities";
+@import url("http://localhost:4000/assets/app.css");
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
+
+@layer utilities {
+  * {
+    font-family: "Inter", "Font Awesome 6 Pro" !important;
+  }
+}

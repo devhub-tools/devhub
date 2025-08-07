@@ -1,0 +1,49 @@
+{
+  "action": "create",
+  "actor": {
+    "id": "ab20def6-0589-4b6d-acbc-75b10971c7c4",
+    "name": "Michael St Clair",
+    "type": "user"
+  },
+  "createdAt": "2024-06-07T21:43:46.612Z",
+  "data": {
+    "id": "bd026a9c-3b1d-4697-a1c3-40e148236a49",
+    "createdAt": "2024-06-07T21:43:46.612Z",
+    "updatedAt": "2024-06-07T21:43:46.612Z",
+    "number": 1380,
+    "title": "test",
+    "priority": 0,
+    "boardOrder": 0,
+    "sortOrder": -622566,
+    "startedAt": "2024-06-07T21:43:46.634Z",
+    "labelIds": [],
+    "teamId": "b1e7592d-a9df-40f8-9b4a-30da4d088e30",
+    "previousIdentifiers": [],
+    "creatorId": "ab20def6-0589-4b6d-acbc-75b10971c7c4",
+    "stateId": "d18ce2aa-c088-457f-8412-715e271b039e",
+    "priorityLabel": "No priority",
+    "botActor": null,
+    "identifier": "DVOPS-1380",
+    "url": "https://linear.app/pdq/issue/DVOPS-1380/test",
+    "state": {
+      "id": "d18ce2aa-c088-457f-8412-715e271b039e",
+      "color": "#f2c94c",
+      "name": "In Progress",
+      "type": "started"
+    },
+    "team": {
+      "id": "b1e7592d-a9df-40f8-9b4a-30da4d088e30",
+      "key": "DVOPS",
+      "name": "DevOps"
+    },
+    "subscriberIds": [
+      "ab20def6-0589-4b6d-acbc-75b10971c7c4"
+    ],
+    "labels": []
+  },
+  "url": "https://linear.app/pdq/issue/DVOPS-1380/test",
+  "type": "Issue",
+  "organizationId": "0488de27-d717-40e9-bf6f-f2fe96e08d8a",
+  "webhookTimestamp": 1717796626728,
+  "webhookId": "191a736d-ab08-47dc-8f4d-fd71a852eed4"
+}
