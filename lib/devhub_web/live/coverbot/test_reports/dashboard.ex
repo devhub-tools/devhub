@@ -1,4 +1,4 @@
-defmodule DevhubWeb.Live.Coverbot.TestReports do
+defmodule DevhubWeb.Live.Coverbot.TestReports.Dashboard do
   @moduledoc false
   use DevhubWeb, :live_view
 
@@ -68,12 +68,20 @@ defmodule DevhubWeb.Live.Coverbot.TestReports do
             </div>
             <div
               id={test_suite_stats.test_suite.id <>"-execution-time"}
-              class=" flex gap-2 justify-self-end"
+              class="flex items-center justify-self-end"
             >
-              <.icon name="hero-clock" />
-              <p>
-                {test_suite_stats.last_test_suite_run.execution_time_seconds} s
-              </p>
+              <.link_button
+                variant="text"
+                navigate={~p"/coverbot/test-reports/#{test_suite_stats.test_suite.id}"}
+              >
+                View details
+              </.link_button>
+              <div class="ml-5 flex items-center gap-2">
+                <.icon name="hero-clock" />
+                <p>
+                  {test_suite_stats.last_test_suite_run.execution_time_seconds |> Decimal.round(2)} s
+                </p>
+              </div>
             </div>
           </div>
           <.test_suite_run_stats test_suite_run={test_suite_stats.last_test_suite_run} />

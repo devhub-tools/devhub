@@ -270,8 +270,12 @@ defmodule DevhubWeb.Router do
 
       # Coverbot
       scope "/coverbot", Coverbot do
+        scope "/test-reports", TestReports do
+          live "/", Dashboard
+          live "/:test_suite_id", TestSuite
+        end
+
         live "/", Dashboard
-        live "/test-reports", TestReports
         live "/:repository_id", Repository
         live "/coverage/:coverage_id", Coverage
       end

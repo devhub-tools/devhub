@@ -11,6 +11,8 @@ defmodule Devhub.Coverbot do
   @behaviour Devhub.Coverbot.Actions.ListRepositoryRefs
   @behaviour Devhub.Coverbot.Actions.ParseFileCoverage
   @behaviour Devhub.Coverbot.Actions.UpsertCoverage
+  @behaviour Devhub.Coverbot.TestReports.Actions.GetFlakyTests
+  @behaviour Devhub.Coverbot.TestReports.Actions.GetSkippedTests
   @behaviour Devhub.Coverbot.TestReports.Actions.GetTestSuite
   @behaviour Devhub.Coverbot.TestReports.Actions.GetTestSuiteRun
   @behaviour Devhub.Coverbot.TestReports.Actions.ListTestReportStats
@@ -51,6 +53,13 @@ defmodule Devhub.Coverbot do
   defdelegate upsert_coverage(coverage_info), to: Actions.UpsertCoverage
 
   ### Test Reports
+
+  @impl TestReportsActions.GetFlakyTests
+  defdelegate get_flaky_tests(test_suite_id, past_n_runs), to: TestReportsActions.GetFlakyTests
+
+  @impl TestReportsActions.GetSkippedTests
+  defdelegate get_skipped_tests(test_suite_id), to: TestReportsActions.GetSkippedTests
+
   @impl TestReportsActions.GetTestSuite
   defdelegate get_test_suite(test_suite_id), to: TestReportsActions.GetTestSuite
 

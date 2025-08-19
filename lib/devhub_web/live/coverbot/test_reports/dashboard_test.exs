@@ -1,4 +1,4 @@
-defmodule DevhubWeb.Live.Coverbot.TestReportsTest do
+defmodule DevhubWeb.Live.Coverbot.TestReports.DashboardTest do
   use DevhubWeb.ConnCase, async: true
 
   import Phoenix.LiveViewTest
@@ -134,5 +134,41 @@ defmodule DevhubWeb.Live.Coverbot.TestReportsTest do
     assert card_2
            |> Floki.find("##{test_suite_run_2_id}-stat-number-of-skipped")
            |> Floki.text() =~ "0"
+  end
+
+  test "View Details button redirects to test suite page", %{conn: conn, organization: organization} do
+    repository = build(:repository, organization: organization)
+
+    test_suite =
+      build(:test_suite,
+        name: "example_test_suite",
+        organization: organization,
+        repository: repository
+      )
+
+    test_suite_run =
+      build(:test_suite_run,
+        organization: organization,
+        repository: repository,
+        test_suite: test_suite,
+        execution_time_seconds: Decimal.new("100.0"),
+        number_of_tests: 50,
+        number_of_failures: 0,
+        number_of_skipped: 1
+      )
+
+    expect(Devhub.Coverbot, :list_test_report_stats, 2, fn ^organization ->
+      [%{test_suite: test_suite, last_test_suite_run: test_suite_run}]
+    end)
+
+    {:ok, view, html} = live(conn, ~p"/coverbot/test-reports")
+
+    assert html =~ "View details"
+    assert has_element?(view, ~s|a[href="/coverbot/test-reports/#{test_suite.id}"]|)
+
+    assert {:error, {:live_redirect, %{to: "/coverbot/test-reports/" <> _test_suite_id, kind: :push}}} =
+             view
+             |> element(~s|a[href="/coverbot/test-reports/#{test_suite.id}"]|)
+             |> render_click()
   end
 end

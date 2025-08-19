@@ -2,6 +2,7 @@ defmodule Devhub.Factory do
   @moduledoc false
   use ExMachina.Ecto, repo: Devhub.Repo
 
+  alias Devhub.Coverbot.TestReports.Schemas.TestRun.Info
   alias Devhub.QueryDesk.Schemas.DatabaseColumn
   alias Devhub.QueryDesk.Schemas.Query
   alias Devhub.QueryDesk.Schemas.QueryApproval
@@ -291,7 +292,10 @@ defmodule Devhub.Factory do
       id: UXID.generate!(prefix: "test_suite"),
       name: attrs[:name] || "test_suite_#{Enum.random(0..9)}",
       organization: organization,
-      repository: repository
+      repository: repository,
+      test_suite_runs: attrs[:test_suite_runs] || [],
+      inserted_at: attrs[:inserted_at] || DateTime.utc_now(),
+      updated_at: attrs[:updated_at] || DateTime.utc_now()
     }
   end
 
@@ -305,6 +309,8 @@ defmodule Devhub.Factory do
     number_of_failures = attrs[:number_of_failures] || Enum.random(1..5)
     number_of_skipped = attrs[:number_of_skipped] || Enum.random(1..5)
     execution_time_seconds = attrs[:execution_time_seconds] || Decimal.new("15.4")
+    inserted_at = attrs[:inserted_at] || DateTime.utc_now()
+    updated_at = attrs[:updated_at] || DateTime.utc_now()
 
     %Devhub.Coverbot.TestReports.Schemas.TestSuiteRun{
       id: UXID.generate!(prefix: "test_suite_run"),
@@ -314,7 +320,55 @@ defmodule Devhub.Factory do
       number_of_errors: number_of_errors,
       number_of_failures: number_of_failures,
       number_of_skipped: number_of_skipped,
-      execution_time_seconds: execution_time_seconds
+      execution_time_seconds: execution_time_seconds,
+      inserted_at: inserted_at,
+      updated_at: updated_at
+    }
+  end
+
+  def test_run_factory(attrs) do
+    test_suite_run = attrs[:test_suite_run] || build(:test_suite_run)
+    class_name = attrs[:class_name] || "TestClass"
+    file_name = attrs[:file_name] || "test_file.exs"
+    test_name = attrs[:test_name] || "test_#{Enum.random(0..999)}"
+    status = attrs[:status] || :passed
+    execution_time_seconds = attrs[:execution_time_seconds] || Decimal.new("0.5")
+    inserted_at = attrs[:inserted_at] || DateTime.utc_now()
+    updated_at = attrs[:updated_at] || DateTime.utc_now()
+
+    info =
+      case status do
+        :passed -> nil
+        :failed -> test_run_info(attrs, :failed)
+        :skipped -> test_run_info(attrs, :skipped)
+      end
+
+    %Devhub.Coverbot.TestReports.Schemas.TestRun{
+      id: UXID.generate!(prefix: "test_run"),
+      test_suite_run: test_suite_run,
+      test_suite_run_id: test_suite_run.id,
+      class_name: class_name,
+      file_name: file_name,
+      test_name: test_name,
+      status: status,
+      execution_time_seconds: execution_time_seconds,
+      info: info,
+      inserted_at: inserted_at,
+      updated_at: updated_at
+    }
+  end
+
+  defp test_run_info(attrs, :failed) do
+    %Info{
+      message: attrs[:info][:message] || "random message",
+      stacktrace: attrs[:info][:stacktrace] || "random stacktrace"
+    }
+  end
+
+  defp test_run_info(attrs, :skipped) do
+    %Info{
+      message: attrs[:info][:message] || "Test skipped",
+      stacktrace: nil
     }
   end
 

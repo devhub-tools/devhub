@@ -1,5 +1,5 @@
 ExUnit.configure(formatters: [JUnitFormatter, ExUnit.CLIFormatter])
-ExUnit.start(capture_log: true)
+ExUnit.start(capture_log: true, exclude: [:skip])
 Ecto.Adapters.SQL.Sandbox.mode(Devhub.Repo, :manual)
 
 Mimic.copy(Devhub, type_check: true)

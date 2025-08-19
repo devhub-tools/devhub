@@ -13,7 +13,7 @@ defmodule Devhub.Coverbot.TestReports.Schemas.TestRun do
           file_name: String.t(),
           test_name: String.t(),
           execution_time_seconds: Decimal.t(),
-          info: Info.t(),
+          info: map() | nil,
           status: status(),
           inserted_at: DateTime.t(),
           updated_at: DateTime.t()
