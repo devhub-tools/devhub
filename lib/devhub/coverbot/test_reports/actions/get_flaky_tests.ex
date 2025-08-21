@@ -10,7 +10,16 @@ defmodule Devhub.Coverbot.TestReports.Actions.GetFlakyTests do
   alias Devhub.Integrations.GitHub.Commit
   alias Devhub.Repo
 
-  @callback get_flaky_tests(String.t(), integer()) :: [map()]
+  @callback get_flaky_tests(String.t(), integer()) :: [
+              %{
+                test_name: String.t(),
+                class_name: String.t(),
+                failure_count: non_neg_integer(),
+                first_failure_at: DateTime.t(),
+                commit_sha: String.t(),
+                info: map()
+              }
+            ]
   def get_flaky_tests(test_suite_id, past_n_runs) do
     recent_runs_query =
       from tsr in TestSuiteRun,
@@ -44,14 +53,15 @@ defmodule Devhub.Coverbot.TestReports.Actions.GetFlakyTests do
         where: tsr.test_suite_id == ^test_suite_id,
         where: tr.status == ^:failed,
         where: tsr.id in subquery(recent_runs_query),
-        group_by: [tr.test_name, tr.class_name, ff.first_failure_at, ff.commit_sha, tr.info],
+        group_by: [tr.test_name, tr.class_name, ff.first_failure_at, ff.commit_sha],
         select: %{
           test_name: tr.test_name,
           class_name: tr.class_name,
           failure_count: count(tr.id),
           first_failure_at: ff.first_failure_at,
           commit_sha: ff.commit_sha,
-          info: tr.info
+          # use aggregate function to get most recent info since tr.info is not in GROUP BY
+          info: fragment("(array_agg(? ORDER BY ? DESC))[1]", tr.info, tr.inserted_at)
         }
 
     result = Repo.all(query)

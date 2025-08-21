@@ -38,8 +38,8 @@ defmodule DevhubWeb.Live.Coverbot.TestReports.TestSuiteTest do
         first_failure_at: ~U[2024-01-01 10:00:00Z],
         commit_sha: "abc123",
         info: %{
-          message: "Test failed randomly",
-          stacktrace: "at TestModule.flaky_test_example(TestModule.java:42)"
+          "message" => "Test failed randomly",
+          "stacktrace" => "at TestModule.flaky_test_example(TestModule.java:42)"
         }
       }
 
