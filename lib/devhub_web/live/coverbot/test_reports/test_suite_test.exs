@@ -82,6 +82,7 @@ defmodule DevhubWeb.Live.Coverbot.TestReports.TestSuiteTest do
     flaky_html = view |> element("#flaky-tests-data") |> render()
     assert flaky_html =~ "flaky_test_example"
     assert flaky_html =~ "TestModule"
+    assert flaky_html =~ "3"
     assert flaky_html =~ ~s(href=\"https://github.com/devhub-tools/devhub/commit/abc123\")
 
     # skipped table
