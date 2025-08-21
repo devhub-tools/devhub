@@ -58,6 +58,11 @@ defmodule DevhubWeb.Live.Coverbot.TestReports.TestSuite do
                 <p class="text-xs">{test_run.test_name}</p>
                 <p class="text-xs text-gray-500">{test_run.class_name}</p>
               </:col>
+              <:col :let={test_run} label="Failures" class="w-1/12">
+                <div class="text-xs">
+                  {test_run.failure_count}
+                </div>
+              </:col>
               <:col :let={test_run} label="First time failed" class="w-1/5">
                 <div class="flex items-center justify-between text-xs">
                   <format-date date={test_run.first_failure_at} format="relative-datetime" />
@@ -101,6 +106,9 @@ defmodule DevhubWeb.Live.Coverbot.TestReports.TestSuite do
               <:col :let={test_run} label="Test" class="w-3/5">
                 <p class="text-xs">{test_run.test_name}</p>
                 <p class="text-xs text-gray-500">{test_run.class_name}</p>
+              </:col>
+              <:col label="" class="w-1/12">
+                <div class="text-xs"></div>
               </:col>
               <:col :let={test_run} label="First time skipped" class="w-1/5">
                 <div class="flex items-center justify-between text-xs">
