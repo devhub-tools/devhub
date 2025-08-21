@@ -42,6 +42,7 @@ defmodule Devhub.Coverbot.TestReports.Actions.GetFlakyTestsTest do
       test_name: "always_failing",
       class_name: "TestModule",
       status: :failed,
+      info: %{message: "Always fails", stacktrace: "always fail trace"},
       inserted_at: ~U[2024-01-01 10:00:00Z]
     )
 
@@ -50,6 +51,7 @@ defmodule Devhub.Coverbot.TestReports.Actions.GetFlakyTestsTest do
       test_name: "failed_before_cutoff",
       class_name: "TestModule",
       status: :failed,
+      info: %{message: "random message", stacktrace: "random stacktrace"},
       inserted_at: ~U[2024-01-01 10:00:00Z]
     )
 
@@ -59,6 +61,7 @@ defmodule Devhub.Coverbot.TestReports.Actions.GetFlakyTestsTest do
       test_name: "flaky",
       class_name: "TestModule2",
       status: :failed,
+      info: %{message: "random message", stacktrace: "random stacktrace"},
       inserted_at: ~U[2024-01-01 10:00:00Z]
     )
 
@@ -75,6 +78,7 @@ defmodule Devhub.Coverbot.TestReports.Actions.GetFlakyTestsTest do
       test_name: "flaky",
       class_name: "TestModule",
       status: :failed,
+      info: %{message: "Error A", stacktrace: "trace A"},
       inserted_at: ~U[2024-01-02 10:00:00Z]
     )
 
@@ -83,6 +87,7 @@ defmodule Devhub.Coverbot.TestReports.Actions.GetFlakyTestsTest do
       test_name: "always_failing",
       class_name: "TestModule",
       status: :failed,
+      info: %{message: "random message 2", stacktrace: "random stacktrace 2"},
       inserted_at: ~U[2024-01-02 10:00:00Z]
     )
 
@@ -107,6 +112,7 @@ defmodule Devhub.Coverbot.TestReports.Actions.GetFlakyTestsTest do
       test_name: "flaky",
       class_name: "TestModule",
       status: :failed,
+      info: %{message: "Error B", stacktrace: "trace B"},
       inserted_at: ~U[2024-01-03 10:00:00Z]
     )
 
@@ -115,6 +121,7 @@ defmodule Devhub.Coverbot.TestReports.Actions.GetFlakyTestsTest do
       test_name: "always_failing",
       class_name: "TestModule",
       status: :failed,
+      info: %{message: "random message 3", stacktrace: "random stacktrace 3"},
       inserted_at: ~U[2024-01-03 10:00:00Z]
     )
 
@@ -147,6 +154,7 @@ defmodule Devhub.Coverbot.TestReports.Actions.GetFlakyTestsTest do
       test_name: "always_failing",
       class_name: "TestModule",
       status: :failed,
+      info: %{message: "last always flaky message", stacktrace: "last always flaky stacktrace"},
       inserted_at: ~U[2024-01-04 10:00:00Z]
     )
 
@@ -163,13 +171,16 @@ defmodule Devhub.Coverbot.TestReports.Actions.GetFlakyTestsTest do
                class_name: "TestModule",
                failure_count: 3,
                first_failure_at: always_failing_first_failure_datetime,
-               test_name: "always_failing"
+               test_name: "always_failing",
+               info: %{"message" => "last always flaky message", "stacktrace" => "last always flaky stacktrace"}
              },
              %{
                class_name: "TestModule",
                failure_count: 2,
                first_failure_at: flaky_first_failure_datetime,
-               test_name: "flaky"
+               test_name: "flaky",
+               # returns info for the last run
+               info: %{"message" => "Error B", "stacktrace" => "trace B"}
              }
            ] =
              Coverbot.get_flaky_tests(test_suite.id, 3)

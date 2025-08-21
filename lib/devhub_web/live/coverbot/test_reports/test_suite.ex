@@ -143,13 +143,13 @@ defmodule DevhubWeb.Live.Coverbot.TestReports.TestSuite do
                 <div>
                   <span class="font-semibold">Error message</span>:
                   <div class="bg-surface-3 mt-4 overflow-auto rounded p-4 text-sm">
-                    <pre class="font-mono whitespace-pre-wrap">{String.trim(test_run.info.message)}</pre>
+                    <pre class="font-mono whitespace-pre-wrap">{String.trim(test_run.info["message"])}</pre>
                   </div>
                 </div>
                 <div class="pt-4">
                   <span class="font-semibold">Stacktrace</span>:
                   <div class="bg-surface-3 mt-4 overflow-auto rounded p-4 text-sm">
-                    <pre class="font-mono whitespace-pre-wrap">{String.trim(test_run.info.stacktrace)}</pre>
+                    <pre class="font-mono whitespace-pre-wrap">{String.trim(test_run.info["stacktrace"])}</pre>
                   </div>
                 </div>
               </div>
