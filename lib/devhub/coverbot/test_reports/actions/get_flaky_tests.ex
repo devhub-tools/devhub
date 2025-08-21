@@ -36,12 +36,12 @@ defmodule Devhub.Coverbot.TestReports.Actions.GetFlakyTests do
         on: tsr3.commit_id == c.id,
         where: tsr3.test_suite_id == ^test_suite_id,
         where: tr3.status == ^:failed,
-        group_by: [tr3.test_name, tr3.class_name, c.sha],
+        group_by: [tr3.test_name, tr3.class_name],
         select: %{
           class_name: tr3.class_name,
           test_name: tr3.test_name,
           first_failure_at: min(tr3.inserted_at),
-          commit_sha: c.sha
+          commit_sha: fragment("(array_agg(? ORDER BY ? ASC))[1]", c.sha, tr3.inserted_at)
         }
 
     query =
