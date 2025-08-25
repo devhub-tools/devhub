@@ -7,19 +7,22 @@ defmodule Devhub.Coverbot.TestReports.Actions.GetFlakyTestsTest do
     organization = insert(:organization)
     repository = insert(:repository, organization: organization)
     test_suite = insert(:test_suite, organization: organization, repository: repository)
-    commit = insert(:commit, repository: repository, organization: organization)
+    commit1 = insert(:commit, repository: repository, organization: organization, sha: "commit1")
+    commit2 = insert(:commit, repository: repository, organization: organization, sha: "commit2")
+    commit3 = insert(:commit, repository: repository, organization: organization, sha: "commit3")
 
     test_suite_run_1 =
-      insert(:test_suite_run, test_suite: test_suite, commit: commit, inserted_at: ~U[2024-01-01 10:00:00Z])
+      insert(:test_suite_run, test_suite: test_suite, commit: commit1, inserted_at: ~U[2024-01-01 10:00:00Z])
 
     test_suite_run_2 =
-      insert(:test_suite_run, test_suite: test_suite, commit: commit, inserted_at: ~U[2024-01-02 10:00:00Z])
+      insert(:test_suite_run, test_suite: test_suite, commit: commit2, inserted_at: ~U[2024-01-02 10:00:00Z])
 
     test_suite_run_3 =
-      insert(:test_suite_run, test_suite: test_suite, commit: commit, inserted_at: ~U[2024-01-03 10:00:00Z])
+      insert(:test_suite_run, test_suite: test_suite, commit: commit3, inserted_at: ~U[2024-01-03 10:00:00Z])
 
+    # same commit of the previous run
     test_suite_run_4 =
-      insert(:test_suite_run, test_suite: test_suite, commit: commit, inserted_at: ~U[2024-01-04 10:00:00Z])
+      insert(:test_suite_run, test_suite: test_suite, commit: commit3, inserted_at: ~U[2024-01-04 10:00:00Z])
 
     insert(:test_run,
       test_suite_run: test_suite_run_1,
@@ -172,6 +175,8 @@ defmodule Devhub.Coverbot.TestReports.Actions.GetFlakyTestsTest do
                failure_count: 3,
                first_failure_at: always_failing_first_failure_datetime,
                test_name: "always_failing",
+               # first (ever) failure was in commit1, but count is only from last 3 runs
+               commit_sha: "commit1",
                info: %{"message" => "last always flaky message", "stacktrace" => "last always flaky stacktrace"}
              },
              %{
@@ -179,6 +184,8 @@ defmodule Devhub.Coverbot.TestReports.Actions.GetFlakyTestsTest do
                failure_count: 2,
                first_failure_at: flaky_first_failure_datetime,
                test_name: "flaky",
+               # first (ever) failure was in commit2
+               commit_sha: "commit2",
                # returns info for the last run
                info: %{"message" => "Error B", "stacktrace" => "trace B"}
              }
