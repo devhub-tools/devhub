@@ -197,7 +197,7 @@ defmodule Devhub.QueryDesk.Actions.RunQuery do
   end
 
   defp do_stream_query(pid, query) do
-    Transaction.transaction(
+    Transaction.transact(
       __MODULE__,
       pid,
       fn ->
@@ -235,6 +235,8 @@ defmodule Devhub.QueryDesk.Actions.RunQuery do
         {:cont, count}
       end
     end)
+
+    {:ok, :done}
   end
 
   defp broadcast(query_id, msg) do

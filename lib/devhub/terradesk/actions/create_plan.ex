@@ -24,7 +24,7 @@ defmodule Devhub.TerraDesk.Actions.CreatePlan do
       else
         {:error, error} ->
           Logger.error("Failed to create plan: #{inspect(error)}")
-          Devhub.Repo.rollback(error)
+          Repo.rollback(error)
       end
     end)
   end

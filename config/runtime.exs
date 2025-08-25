@@ -137,6 +137,8 @@ if config_env() == :prod do
     secret_key_base: Secret.read("app/SECRET_KEY_BASE"),
     server: true
 
+  config :logger, :default_handler, formatter: LoggerJSON.Formatters.Basic.new(metadata: [])
+
   config :sentry,
     dsn: "https://ecfbbb89735447929575b479da06bd0f@errors.devhub.tools/1",
     environment_name: host

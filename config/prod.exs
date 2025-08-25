@@ -2,8 +2,6 @@ import Config
 
 config :devhub, DevhubWeb.Endpoint, cache_static_manifest: "priv/static/cache_manifest.json"
 
-config :logger, :default_handler, formatter: {LoggerJSON.Formatters.Basic, []}
-
 config :logger,
   backends: [Sentry.LoggerBackend]
 

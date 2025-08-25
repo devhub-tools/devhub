@@ -90,7 +90,7 @@ defmodule DevhubWeb.Proxy.Postgres.ConnectToDatabase do
       {:ok, data} ->
         case client_conn do
           ref when is_binary(ref) ->
-            Phoenix.PubSub.broadcast(Devhub.PubSub, "agent", {ref, {:message_from_database, {:ok, data}}})
+            PubSub.broadcast(Devhub.PubSub, "agent", {ref, {:message_from_database, {:ok, data}}})
 
           client_conn ->
             :ssl.send(client_conn, data)
@@ -101,7 +101,7 @@ defmodule DevhubWeb.Proxy.Postgres.ConnectToDatabase do
       _error ->
         case client_conn do
           ref when is_binary(ref) ->
-            Phoenix.PubSub.broadcast(Devhub.PubSub, "agent", {ref, {:message_from_database, {:error, :closed}}})
+            PubSub.broadcast(Devhub.PubSub, "agent", {ref, {:message_from_database, {:error, :closed}}})
 
           client_conn ->
             :ssl.close(client_conn)

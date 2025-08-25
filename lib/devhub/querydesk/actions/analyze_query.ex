@@ -30,7 +30,7 @@ defmodule Devhub.QueryDesk.Actions.AnalyzeQuery do
       # because we rolled back it will always return an error
       # we do this so that the queries don't actually execute
       {:error, result} =
-        Transaction.transaction(
+        Transaction.transact(
           __MODULE__,
           pid,
           fn ->

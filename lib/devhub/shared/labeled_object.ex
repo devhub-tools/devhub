@@ -6,7 +6,7 @@ defmodule Devhub.Shared.Schemas.LabeledObject do
 
   alias Devhub.QueryDesk.Schemas.SavedQuery
   alias Devhub.Shared.Schemas.Label
-  alias Devhub.Users.Organization
+  alias Devhub.Users.Schemas.Organization
 
   @type t :: %__MODULE__{
           label_id: String.t(),
@@ -21,6 +21,7 @@ defmodule Devhub.Shared.Schemas.LabeledObject do
     belongs_to :label, Label
     belongs_to :saved_query, SavedQuery
     belongs_to :organization, Organization
+
     timestamps()
   end
 

@@ -8,10 +8,6 @@ defmodule DevhubWeb.Middleware.Events.Hook do
     |> cont()
   end
 
-  defp maybe_handle_event("navigate", %{"path" => path}, socket) do
-    socket |> push_navigate(to: path) |> halt()
-  end
-
   defp maybe_handle_event("generate_proxy_password", _params, socket) do
     {:ok, proxy_password} =
       Devhub.Users.generate_proxy_password(

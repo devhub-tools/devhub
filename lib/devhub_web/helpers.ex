@@ -46,7 +46,7 @@ defmodule DevhubWeb.Helpers do
       |> Map.new()
 
     preferences = Map.put(user.preferences || %{}, preferences_key, Map.put(filters, key, new_filters))
-    {:ok, user} = Devhub.Users.update_user(user, %{preferences: preferences})
+    {:ok, user} = Users.update_user(user, %{preferences: preferences})
 
     params =
       (socket.assigns.uri.query || "")

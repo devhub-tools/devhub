@@ -21,7 +21,7 @@ defmodule DevhubWeb.Live.Uptime.ServiceTest do
   test "handles chart failure", %{conn: conn, organization: organization} do
     service = insert(:uptime_service, organization: organization)
 
-    expect(Devhub.Uptime, :service_history_chart, fn _service, _start_date, _end_date ->
+    expect(Uptime, :service_history_chart, fn _service, _start_date, _end_date ->
       raise "Failure"
     end)
 

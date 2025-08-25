@@ -40,7 +40,7 @@ defmodule DevhubWeb.Components.QueryDesk.QueryLibraryTest do
     assert_push_event(view, "load_from_local_storage", %{"localStorageKey" => ^saved_query_id, "default" => ^query_string})
 
     # failed to delete the query
-    expect(Devhub.QueryDesk, :delete_saved_query, fn _saved_query ->
+    expect(QueryDesk, :delete_saved_query, fn _saved_query ->
       {:error, changeset}
     end)
 

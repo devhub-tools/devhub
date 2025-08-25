@@ -4,14 +4,13 @@ Chart.register(Colors)
 
 export const ChartHook = {
   mounted() {
-    this.handleEvent("create_chart", data => createChart(data, this))
+    this.handleEvent("create_chart", data => createChart(data))
     updateChartColors()
   },
 }
 
 const createChart = (
   { id, datasets, data, labels, unit, type, max, links = [], displayLegend = false, stacked = false },
-  view
 ) => {
   const canvas = document.getElementById(id)
   const borderColor = getComputedStyle(document.documentElement).getPropertyValue("--alpha-8")
@@ -64,7 +63,7 @@ const createChart = (
           const firstElement = elements[0]
           const dataIndex = firstElement.index
           const link = links[dataIndex]
-          if (link) view.pushEvent("navigate", { path: link + window.location.search })
+          if (link) window.location.href = link + window.location.search
         }
       },
       onHover: (event, chartElement) => {

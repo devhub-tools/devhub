@@ -7,7 +7,7 @@ defmodule Devhub.ApiKeysTest do
     %{id: organization_id} = organization = insert(:organization)
 
     # create/1
-    {:ok, %{id: api_key_id}, token} = Devhub.ApiKeys.create(organization, "test", [:coverbot])
+    {:ok, %{id: api_key_id}, token} = ApiKeys.create(organization, "test", [:coverbot])
 
     # verify/1
     assert {:ok,

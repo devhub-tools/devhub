@@ -128,7 +128,7 @@ defmodule Devhub.Workflows.Actions.Continue do
     end
   end
 
-  defp do_run_step(run, %Run.Step{action: %Step.QueryAction{} = action} = step) do
+  defp do_run_step(run, %Run.Step{action: %QueryAction{} = action} = step) do
     query_string = Workflows.replace_variables(run.input, action.query, run.steps)
 
     result =

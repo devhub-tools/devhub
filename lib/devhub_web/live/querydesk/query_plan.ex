@@ -10,7 +10,7 @@ defmodule DevhubWeb.Live.QueryDesk.QueryPlan do
     socket
     |> assign(
       query: query,
-      plan: Devhub.QueryDesk.parse_plan(query.plan),
+      plan: QueryDesk.parse_plan(query.plan),
       mode: "duration",
       selected_node_id: nil
     )

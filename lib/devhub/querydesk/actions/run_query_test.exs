@@ -38,7 +38,7 @@ defmodule Devhub.QueryDesk.Actions.RunQueryTest do
              executed_at: executed_at
            } = query
 
-    refute is_nil(executed_at)
+    assert executed_at
 
     assert {:error, "Query was already executed."} = QueryDesk.run_query(query)
   end
@@ -76,7 +76,7 @@ defmodule Devhub.QueryDesk.Actions.RunQueryTest do
              executed_at: executed_at
            } = query
 
-    refute is_nil(executed_at)
+    assert executed_at
   end
 
   test "streaming" do
@@ -258,7 +258,7 @@ defmodule Devhub.QueryDesk.Actions.RunQueryTest do
              executed_at: executed_at
            } = query
 
-    refute is_nil(executed_at)
+    assert executed_at
   end
 
   test "local - bad query with multiple queries" do
@@ -294,7 +294,7 @@ defmodule Devhub.QueryDesk.Actions.RunQueryTest do
              executed_at: executed_at
            } = query
 
-    refute is_nil(executed_at)
+    assert executed_at
   end
 
   test "not approved" do
